@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: montserrat ,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*caebcalho*/
+
+
+
+header{
+    display: flex;
+    background: #389cc7;
+}
+#btn a{
+    text-decoration: none;
+}
+#btn{
+    display: flex;
+    flex-wrap: wrap;
+}
+#logo{
+    padding: 20px;
+    margin-left: 3%;
+}
+nav{
+    height: 30px;
+    margin-top: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover{
+    color: #063970;
+    text-decoration: underline;
+}
+nav ul li{
+    display: inline-block;
+    margin: 15px;
+}
+#entrar, #cadastrar{
+    display: block;
+    text-align: center;
+    width: 80px;
+    border-radius: 10px;
+    padding: 9px;
+    margin: 15px;
+}
+#entrar,#cadastrar:hover{
+    border: #fff solid 1px;
+    color: #fff;
+    background: #063970;
+}
+#cadastrar,#entrar:hover{
+    border: #063970 solid 1px;
+    color: #063970;
+    background: #fff;
+}
+
+
+/* area principal */
+
+
+#principal{
+    width: 80%;
+    margin: 0 auto;
+}
+#reclame{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+#reclame a{
+    display: block;
+    background: url(../img/reclame.png);
+    height: 90px;
+    width: 326px;
+}
+#reclame a:hover{
+    display: block;
+    background: url(../img/reclame.png) right;
+    height: 90px;
+    width: 326px;
+}
+/*@media(max-width: 767px){
+    #btn{
+        float: left;
+    }
+}*/
+
+
+
+/* area de login */
+
+
+.container{
+    background: linear-gradient(45deg, #389cc7, #063970);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#formulario{
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    height: 180px;
+    width: 200px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+#formulario h2{
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+}
+.input-field{
+    position: relative;
+
+}
+.input-field input{
+    outline: none;
+    
+}
+#email,#senha,#confirmar{
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+
+
+/* area de cadastro */
+
+#cdp1{
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    height: 280px;
+    width: 400px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+#btn2 a{
+    text-decoration: none;
+}
+#btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+#cidadao, #ouvidor{
+    display: block;
+    text-align: center;
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+}
+#cidadao,#ouvidor:hover{
+    border: #fff solid 1px;
+    color: #fff;
+    background: #063970;
+}
+#ouvidor,#cidadao:hover{
+    border: #063970 solid 1px;
+    color: #063970;
+    background: #fff;
+}
