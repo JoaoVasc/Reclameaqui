@@ -35,8 +35,8 @@ nav a{
     color: #fff;
 }
 nav a:hover{
-    color: #063970;
-    border-bottom: 1px solid #4e80b6;
+    color: aqua;
+    border-bottom: 1px solid #063970;
 }
 nav ul li{
     display: inline-block;
@@ -112,33 +112,14 @@ nav ul li{
     align-items: center;
     justify-content: center;
 }
-#formulario{
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    height: 180px;
-    width: 200px;
-    padding-left: 30px;
-    padding-top: 20px;
-}
-#formulario h2{
-    font-weight: 600;
-    margin-bottom: 15px;
-    position: relative;
-}
-.input-field{
-    position: relative;
-
-}
-.input-field input{
-    outline: none;
-    
-}
 #email,#senha,#confirmar{
     border-radius: 5px;
     margin-bottom: 10%;
 }
 
-
+#entrando{
+    width: 500px;
+}
 /* area de cadastro */
 
 #cdp1{
@@ -245,7 +226,7 @@ legend{
     color: #fff;
     text-transform: uppercase;
 }
-#submit input{
+#confirmar{
     color: #063970;
     font-size: large;
     float: right;
@@ -255,4 +236,62 @@ legend{
     margin-top: 20px;
     margin-right: 75px;
     cursor: pointer;
+}
+
+
+/*Reclamações*/
+#R1{
+    width: 95%;
+    height: 530px;
+    margin-top: 30px;
+}
+aside{
+    float: left;
+    background: rgba(255, 255, 255, 0.856);
+    width: 25%; 
+    height: 530px;
+}
+#reclamacoes{
+    float: right;
+    background: rgba(255, 255, 255, 0.856);
+    width: 73%;
+    height: 530px;
+}
+.btnl{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: block;
+    width: 250px;
+    padding: 15px;
+    background: #389cc7;
+    transition: 0.5s all;
+}
+.btnl:hover{
+    background-color: #063970;
+    color: aquamarine;
+}
+#reclamacoes h2,#reclamacoes h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+.btnRg,.btnRr{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: block;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.btnRg{
+    background: #0a0;
+}
+.btnRr{
+    background: #d00;
 }
