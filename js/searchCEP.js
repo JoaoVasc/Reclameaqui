@@ -33,5 +33,4 @@ const searchCEP = async() =>{
     }
 };
 
-document.getElementById('CEP')
-    .addEventListener('focusout',searchCEP);
+document.getElementById('CEP').addEventListener('focusout',searchCEP);
