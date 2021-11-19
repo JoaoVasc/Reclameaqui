@@ -295,3 +295,45 @@ aside{
 .btnRr{
     background: #d00;
 }
+#secretaria{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#reclamacoes div{
+    margin-top: 130px;
+}
+#seguir{
+    display: block;
+    text-align: center;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s all;
+    border: #063970 solid 1px;
+    color: #fff;
+    background: #0a0;
+    text-decoration: none;
+    margin: 0 auto;
+}
+#seguir:hover{
+    border: #fff solid 1px;
+    color: #fff;
+    background: #0d0;
+}
+#titulo{
+    width: 600px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+#texto{
+    border-radius: 15px;
+    width: 700px;
+    padding-bottom: 100px;
+}
+.rf{
+    margin: 10px;
+}
