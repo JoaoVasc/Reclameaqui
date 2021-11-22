@@ -19,7 +19,7 @@ const validCep = (cep) => /^[0-9]+$/.test(cep) && cep.length == 8;
 const searchCEP = async() =>{
     clearForm();
     const cep = document.getElementById('CEP').value;
-    const url = `http://viacep.com.br/ws/${cep}/json/`;
+    const url = `https://viacep.com.br/ws/${cep}/json/`;
     if (validCep(cep)){
         const jsonData = await fetch(url)
         const addressData = await jsonData.json();        
