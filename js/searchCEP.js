@@ -1,5 +1,7 @@
 "use strict";
 
+var cepNum = 'CEP'
+
 const writeForm = (addressData) => {
     document.getElementById('lougradouro').value = addressData.logradouro
     document.getElementById('bairro').value = addressData.bairro
@@ -18,8 +20,8 @@ const validCep = (cep) => /^[0-9]+$/.test(cep) && cep.length == 8;
 
 const searchCEP = async() =>{
     clearForm();
-    const cep = document.getElementById('CEP').value;
-    const url = `http://viacep.com.br/ws/${cep}/json/`;
+    const cep = document.getElementById('CEP').value.replace(/\D/g, "");
+    const url = `https://viacep.com.br/ws/${cep}/json/`;
     if (validCep(cep)){
         const jsonData = await fetch(url)
         const addressData = await jsonData.json();        
@@ -33,4 +35,17 @@ const searchCEP = async() =>{
     }
 };
 
-document.getElementById('CEP').addEventListener('focusout',searchCEP);
+function cepMask() {
+
+    document.getElementById(cepNum).value = document.getElementById(cepNum).value.replace(/[&\/\\#,+()$~%'":*?<>{}a-zA-Z]/g,'');
+
+    if(document.getElementById(cepNum).value.length == 2){
+        document.getElementById(cepNum).value += "."      
+    }else if(document.getElementById(cepNum).value.length == 6){        
+        document.getElementById(cepNum).value += "-"
+    };
+};  
+
+document.getElementById(cepNum).addEventListener('focusout',searchCEP);
+document.getElementById(cepNum).addEventListener('keydown',cepMask);
+
