@@ -72,19 +72,16 @@ nav ul li{
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vh;
-    display: flex;
-    justify-content: center;
+    border: solid rgb(25, 12, 82) 0.1px;
 }
-#reclame{
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-}
+
 #reclame a{
     display: block;
     background: url(../img/reclame.png);
     height: 90px;
     width: 326px;
+    margin: 0 auto;
+    margin-top: 5%;
 }
 #reclame a:hover{
     display: block;
@@ -97,8 +94,17 @@ nav ul li{
         float: left;
     }
 }*/
-
-
+article{
+    width: 90%;
+    margin: 0 auto;
+    border: solid 2px rgb(8, 10, 44);
+    border-radius: 15px;
+    background: rgb(221, 217, 217);
+    margin-top: 25px;
+}
+article p, article h3{
+    margin: 15px;
+}
 
 /* area de login */
 
@@ -217,13 +223,11 @@ legend{
 .inputuser{
     width: 100%;
     color: #fff;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #063970;
+    background: #fff;
     outline: none;
 }
 ::placeholder{
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
 }
 #confirmar{
@@ -325,15 +329,19 @@ aside{
     background: #0d0;
 }
 #titulo{
-    width: 600px;
+    width: 610px;
     border-radius: 15px;
     margin-bottom: 15px;
+    margin-left: 43px;
 }
 #texto{
     border-radius: 15px;
-    width: 700px;
+    width: 610px;
     padding-bottom: 100px;
 }
 .rf{
     margin: 10px;
+}
+#arquivo{
+    margin-left: 25px;
 }
