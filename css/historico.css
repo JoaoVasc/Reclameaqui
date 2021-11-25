@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: montserrat ,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+}
+/*caebcalho*/
+header{
+    display: flex;
+    background: #389cc7;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+#btn a{
+    text-decoration: none;
+}
+#btn{
+    display: flex;
+    flex-wrap: wrap;
+}
+#logo{
+    padding: 20px;
+}
+nav{
+    height: 30px;
+    margin-top: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover{
+    color: aqua;
+    border-bottom: 1px solid #063970;
+}
+nav ul li{
+    display: inline-block;
+    margin: 15px;
+}
+#entrar, #cadastrar{
+    display: block;
+    text-align: center;
+    width: 90px;
+    border-radius: 10px;
+    padding: 9px;
+    margin: 15px;
+    transition: 0.5s all;
+}
+#entrar,#cadastrar:hover{
+    border: #fff solid 1px;
+    color: #fff;
+    background: #063970;
+}
+#cadastrar,#entrar:hover{
+    border: #063970 solid 1px;
+    color: #063970;
+    background: #fff;
+}
+/* area principal */
+#principal{
+    margin: 0 auto;
+    background: linear-gradient(45deg, #389cc7, #063970);
+    background-repeat: no-repeat;
+    height: 38rem;
+    border: solid rgb(25, 12, 82) 0.1px;
+}
+#reclame a{
+    display: block;
+    background: url(../img/reclame.png);
+    height: 90px;
+    width: 326px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+#reclame a:hover{
+    display: block;
+    background: url(../img/reclame.png) right;
+    height: 90px;
+    width: 326px;
+}
+article{
+    width: 90%;
+    margin: 0 auto;
+    border: solid 2px rgb(8, 10, 44);
+    border-radius: 15px;
+    background: rgb(221, 217, 217);
+    margin-top: 25px;
+    box-shadow: 2px 2px 2px;
+}
+article p, article h3{
+    margin: 15px;
+}
+#R1{
+    width: 95%;
+    height: 530px;
+    margin-top: 30px;
+}
+aside{
+    float: left;
+    background: rgba(255, 255, 255, 0.856);
+    width: 25%; 
+    height: 530px;
+}
+#reclamacoes{
+    float: right;
+    background: rgba(255, 255, 255, 0.856);
+    width: 73%;
+    height: 530px;
+}
+.btnl{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: block;
+    width: 250px;
+    padding: 15px;
+    background: #389cc7;
+    transition: 0.5s all;
+}
+.btnl:hover{
+    background-color: #063970;
+    color: aquamarine;
+}
+#historico{
+    margin: 0 auto;
+    margin: 10px;
+    margin-top: 100px;
+    font-size: 0.8em;
+}
+#historico th, #historico td{
+    text-align: center;
+    border-radius: 3px;
+}
+.cc{
+    background-color: rgb(214, 214, 214);
+    
+}
+.ce{
+    background-color: rgb(180, 180, 180);
+}
+#reclamacoes h2{
+    text-align: center;
+}
