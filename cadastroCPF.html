@@ -34,13 +34,16 @@
                             <br />
                             <label for="ap_citizen_name" class="cpf-form-label">Informe Seu CPF</label>
                             <input class="inputuser" type="text" name="cpf" id="cpf" maxlength="14" autocomplete="off"
-                                onkeyup="cpfMask(this.value)" required>
+                            onclick="clearImput()" onkeyup="cpfMask(this.value)" required>
                         </fieldset>
+                        <div class="row">
+                            <div id="message"></div>
+                        </div>
                         <div id="registration-botton">
-                            <button class="btnRegister btn_green">Cadastrar</button>
+                            <button class="btnRegister btn_green" onclick="contentValidation()">Cadastrar</button>
                         </div>
                         <div id="legalTermsText">
-                            <p">Ao criar uma conta, você concorda com as <a href="#"></a>Condições de Uso</a>. Verifique a
+                            <p">Ao criar uma conta, você concorda com as <a href="#">Condições de Uso</a>. Verifique a
                                 <a href="#">Notificação de Privacidade</a> e os <a href="#">Termos de Uso</a>.</p>
                         </div>
                     <hr>

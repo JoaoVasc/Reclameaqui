@@ -2,12 +2,28 @@
 
 var cpfInput = 'cpf'
 
+function clearImput(){
+    document.getElementById(cpfInput).value = ""
+    document.getElementById('message').style.display = 'none';
+};
+
 function TestaCPF(strCPF) {
     var Soma;
     var Resto;
     var i;
     Soma = 0;
-  if (strCPF == "00000000000" ) return false;
+  if (
+        strCPF == '00000000000'
+        || strCPF == '11111111111'
+        || strCPF == '22222222222'
+        || strCPF == '33333333333'
+        || strCPF == '44444444444'
+        || strCPF == '55555555555'
+        || strCPF == '66666666666'
+        || strCPF == '77777777777'
+        || strCPF == '88888888888'
+        || strCPF == '99999999999'
+    ) return false;
 
   for (i=1; i<=9; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
   Resto = (Soma * 10) % 11;
@@ -24,6 +40,25 @@ function TestaCPF(strCPF) {
     return true;
 };
 
+function messageAlert(){
+    var message = document.getElementById('message');
+    message.innerHTML = 'CPF Invalido';
+    message.className = 'message alert';
+    event.preventDefault();
+};
+
+function contentValidation(){
+
+    let strCPF = document.getElementById(cpfInput).value.replace(/\D/g, "");
+    let strCPFlength = document.getElementById(cpfInput).value.replace(/\D/g, "").length;
+
+    if (strCPFlength < 11 || strCPFlength > 11 || TestaCPF(strCPF) == false){
+        messageAlert();
+        document.getElementById('message').style.display = '';
+        event.preventDefault();
+    };
+};
+
 function cpfMask() {
 
     document.getElementById(cpfInput).value = document.getElementById(cpfInput).value.replace(/[&\/\\#,+()$~%'":*?<>{}a-zA-Z]/g,'')
@@ -32,19 +67,6 @@ function cpfMask() {
         document.getElementById(cpfInput).value += "."      
     }else if(document.getElementById(cpfInput).value.length == 11){        
         document.getElementById(cpfInput).value += "-"
-    };    
+    };
 
-    let strCPF = document.getElementById(cpfInput).value.replace(/\D/g, "");
-
-    if (document.getElementById(cpfInput).value.length == 14){
-        
-        switch (TestaCPF(strCPF)){
-            case false:
-                alert('CPF inválido');
-                document.getElementById(cpfInput).value = ""
-                break;
-            case true:
-                break;
-        }
-    }
 };
