@@ -129,6 +129,7 @@ article p, article h3{
     height: auto;
     width: auto;
     padding: 20px;
+    margin-top: 10px;
 }
 td{
     display: inline-block;
@@ -232,6 +233,20 @@ legend{
     margin-top: 20px;
     margin-right: 75px;
     cursor: pointer;
+}
+#confirmar1{
+    color: #063970;
+    font-size: large;
+    float: right;
+    width: 160px;
+    border-radius: 10px;
+    padding: 5.5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#sexo{
+    margin-left: 51px;
 }
 /*Reclamações*/
 #R1{

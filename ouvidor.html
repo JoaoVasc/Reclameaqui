@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/searchCEP.js" type='module' defer></script>
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo"><a href="index.html"><img src="img/SES.png" alt=""></a></div>
+            <div id="pernambuco">
+                <img src="./img/SESP.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Acompanhe sua reclamação</a></li>
+                    <li><a href="">Cadastre uma empresa</a></li>
+                </ul>
+            </nav>
+            <div id="btn">
+                <div><a id="entrar" href="./entrar.html">Entrar</a></div>
+                <div><a id="cadastrar" href="cadastro.html">Cadastrar</a></div>
+            </div>
+        </header>
+        <!--Fim do cabecalho-->
+        <section class="container">
+            <div id="cdp1">
+                <div id="cadastrando">
+                    <form action="">
+                        <fieldset>
+                            <legend><b>Cadastro</b></legend>
+                            <br/>
+                            <table>
+                                <tr>
+                                    <td><input class="inputuser" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="inputuser" type="text" name="nome" id="nome" placeholder="Nome completo" required></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="inputuser" type="date" name="nascimento" id="nascimento" placeholder="Data de Nascimento" required></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="inputuser" type="text" name="matricula" id="matricula" placeholder="Matrícula" maxlength="10"></td>
+                                    <td><input class="inputuser" type="text" name="alocacao" id="alocacao" placeholder="Local de Alocação" required></td>
+                                </tr>
+                                <tr>
+                                    <td><select name="tipoServidor" id="tipoServidor">
+                                        <option value="Servidor">Tipo de Servidor</option>
+                                        <option value="Servidor">Concursado</option>
+                                        <option value="Servidor">Comissionado</option>
+                                        <option value="Servidor">Terceirizado</option>
+                                    </select>
+                                    </td>
+                                    <td><select name="sexo" id="sexo">
+                                        <option value="Servidor">Sexo</option>
+                                        <option value="Servidor">Masculino</option>
+                                        <option value="Servidor">Feminino</option>
+                                        <option value="Servidor">Outros</option>
+                                    </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="inputuser" name="cidade" id="cidade" placeholder="cidade"></td>
+                                    <td><input type="text" class="inputuser" name="estado" id="estado" placeholder="estado"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="email" class="inputuser" name="email" id="email1" placeholder="e-mail para cadastro"></td>
+                                    <td><input type="email" class="inputuser" name="c-email" id="email1" placeholder="confirme o e-mail"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="password" class="inputuser" name="senha" id="senha1" placeholder="senha"></td>
+                                    <td><input type="password" class="inputuser" name="c-senha" id="senha1" placeholder="confirme sua senha"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <div>
+                            <input id="confirmar1" type="submit" value="Confirmar" href="index.html">
+                        </div>
+                    </form>
+                </div>
+                <div id="btn3">
+                    <a id="voltar" href="cadastro.html">Voltar</a>
+                </div>
+                <!-- /#btn3 -->
+            </div>
+        </section>
+    </body>
+</html>
