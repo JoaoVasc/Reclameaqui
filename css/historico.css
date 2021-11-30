@@ -23,6 +23,12 @@ header{
 }
 #logo{
     padding: 20px;
+    padding-top: 50px;
+}
+#pernambuco{
+    padding-top: 21px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 nav{
     height: 30px;
@@ -100,6 +106,7 @@ article p, article h3{
 }
 aside{
     float: left;
+    margin-left: 15px;
     background: rgba(255, 255, 255, 0.856);
     width: 25%; 
     height: 530px;
