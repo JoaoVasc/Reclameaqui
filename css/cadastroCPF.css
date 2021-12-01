@@ -7,8 +7,8 @@ body{
 }
 header{
     display: flex;
+    flex-wrap: wrap;
     background: #389cc7;
-    justify-content: center;
     width: auto;
     height: auto;
 }
@@ -18,20 +18,19 @@ header{
 #btn{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 200px;
 }
 #logo{
-    padding: 20px;
-    padding-top: 50px;
+    padding: 25px 25px 0px 25px;
+    margin-left: 50px;
 }
 #pernambuco{
-    padding-top: 21px;
-    margin-right: 40px;
-    margin-left: 40px;
+    padding: 6px;
+    margin-left: 200px;
 }
 nav{
-    height: 30px;
-    margin-top: 10px;
-    width: 400px;
+    
+    margin-left: 100px;
 }
 nav a{
     text-decoration: none;
@@ -44,6 +43,7 @@ nav a:hover{
 nav ul li{
     display: inline-block;
     margin: 15px;
+    margin-left: 200px;
 }
 #entrar, #cadastrar{
     display: block;

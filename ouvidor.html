@@ -12,37 +12,37 @@
         <header>
             <div id="logo"><a href="index.html"><img src="img/SES.png" alt=""></a></div>
             <div id="pernambuco">
-                <img src="./img/SESP.png" alt="">
+                <img src="https://cdn.pe.gov.br/default/governo/default/assets/img/marca_brasao_transp_azul_hor_184x48.png" width="240" alt="">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="">Acompanhe sua reclamação</a></li>
-                    <li><a href="">Cadastre uma empresa</a></li>
-                </ul>
-            </nav>
             <div id="btn">
                 <div><a id="entrar" href="./entrar.html">Entrar</a></div>
                 <div><a id="cadastrar" href="cadastro.html">Cadastrar</a></div>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Acompanhe sua reclamação</a></li>
+                    <li><a href="#">Cadastre uma empresa</a></li>
+                </ul>
+            </nav>
         </header>
         <!--Fim do cabecalho-->
         <section class="container">
             <div id="cdp1">
                 <div id="cadastrando">
                     <form action="">
-                        <fieldset>
+                        <fieldset id="ouvidorc">
                             <legend><b>Cadastro</b></legend>
                             <br/>
                             <table>
                                 <tr>
-                                    <td><input class="inputuser" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required></td>
+                                    <td><input class="inputuser" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF(obrigatório)" required></td>
                                 </tr>
                                 <tr>
-                                    <td><input class="inputuser" type="text" name="nome" id="nome" placeholder="Nome completo" required></td>
+                                    <td><input class="inputuser" type="text" name="nome" id="nome" placeholder="Nome completo(obrigatório)" required></td>
                                 </tr>
                                 <tr>
                                     <td><input class="inputuser" type="text" name="matricula" id="matricula" placeholder="Matrícula" maxlength="10"></td>
-                                    <td><input class="inputuser" type="text" name="alocacao" id="alocacao" placeholder="Local de Alocação" required></td>
+                                    <td><input class="inputuser" type="text" name="alocacao" id="alocacao" placeholder="Alocação(obrigatório)" required></td>
                                 </tr>
                                 <tr>
                                     <td><select name="tipoServidor" id="tipoServidor">
@@ -62,8 +62,8 @@
                                     <td><input type="email" class="inputuser" name="c-email" id="email1" placeholder="confirme o e-mail"></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="password" class="inputuser" name="senha" id="senha1" placeholder="senha"></td>
-                                    <td><input type="password" class="inputuser" name="c-senha" id="senha1" placeholder="confirme sua senha"></td>
+                                    <td><input type="password" class="inputuser" name="senha" id="senha1" placeholder="senha" required></td>
+                                    <td><input type="password" class="inputuser" name="c-senha" id="senha1" placeholder="confirme sua senha" required></td>
                                 </tr>
                             </table>
                         </fieldset>
