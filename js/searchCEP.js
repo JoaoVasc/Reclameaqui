@@ -47,5 +47,5 @@ function cepMask() {
 };  
 
 document.getElementById(cepNum).addEventListener('focusout',searchCEP);
-//document.getElementById(cepNum).addEventListener('onkeypress',cepMask);
+
 
