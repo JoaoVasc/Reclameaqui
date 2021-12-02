@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/searchCEP.js" type='module' defer></script>
+        <script src="js/searchCEP.js" ></script>
+        <script src="js/handlingCPF.js"></script>
         <title>Cadastro</title>
     </head>
-    <body>
+    <body onload="writeCpf()">
         <header>
             <div id="logo"><a href="index.html"><img src="img/SES.png" alt=""></a></div>
             <div id="pernambuco">
@@ -30,28 +32,33 @@
             <div id="cdp1">
                 <div id="cadastrando">
                     <form action="">
-                        <fieldset id="ouvidorc">
+                        <fieldset>
                             <legend><b>Cadastro</b></legend>
                             <br/>
                             <table>
                                 <tr>
-                                    <td><input class="inputuser" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF(obrigatório)" required></td>
+                                    <td><input class="inputuser" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" readonly=“true” required></td>
                                 </tr>
                                 <tr>
-                                    <td><input class="inputuser" type="text" name="nome" id="nome" placeholder="Nome completo(obrigatório)" required></td>
+                                    <td><input class="inputuser" type="text" name="nome" id="nome" placeholder="Nome completo" required></td>
                                 </tr>
                                 <tr>
-                                    <td><input class="inputuser" type="text" name="matricula" id="matricula" placeholder="Matrícula" maxlength="10"></td>
-                                    <td><input class="inputuser" type="text" name="alocacao" id="alocacao" placeholder="Alocação(obrigatório)" required></td>
+                                    <td><input class="inputuser" type="tel" name="telefoneF" id="fixo" placeholder="Telefone Fixo"></td>
+                                    <td><input class="inputuser" type="tel" name="telefoneM" id="movel" placeholder="Telefone Móvel"></td>
                                 </tr>
                                 <tr>
-                                    <td><select name="tipoServidor" id="tipoServidor">
-                                        <option value="Servidor">Tipo de Servidor</option>
-                                        <option value="Servidor">Concursado</option>
-                                        <option value="Servidor">Comissionado</option>
-                                        <option value="Servidor">Terceirizado</option>
-                                    </select>
-                                    </td>
+                                    <td><input class="inputuser" type="date" name="nascimento" id="nascimento" placeholder="Data de Nascimento" required></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="inputuser" type="text" name="CEP" id="CEP" placeholder="CEP" maxlength="10" onkeypress="cepMask()"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="inputuser" type="text" name="lougradouro" id="lougradouro" placeholder="lougradouro" required></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="inputuser" type="number" name="numero" id="numero" placeholder="número" required></td>
+                                    <td><input class="inputuser" type="text" name="complemento" id="complemento" placeholder="complemento" required></td>
+                                    <td><input class="inputuser" type="text" name="bairro" id="bairro" placeholder="bairro" required></td>
                                 </tr>
                                 <tr>
                                     <td><input type="text" class="inputuser" name="cidade" id="cidade" placeholder="cidade"></td>
@@ -62,18 +69,18 @@
                                     <td><input type="email" class="inputuser" name="c-email" id="email1" placeholder="confirme o e-mail"></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="password" class="inputuser" name="senha" id="senha1" placeholder="senha" required></td>
-                                    <td><input type="password" class="inputuser" name="c-senha" id="senha1" placeholder="confirme sua senha" required></td>
+                                    <td><input type="password" class="inputuser" name="senha" id="senha1" placeholder="senha"></td>
+                                    <td><input type="password" class="inputuser" name="c-senha" id="senha1" placeholder="confirme sua senha"></td>
                                 </tr>
                             </table>
                         </fieldset>
                         <div>
-                            <input id="confirmar1" type="submit" value="Confirmar" href="index.html">
+                            <input id="confirmar" type="submit" value="Confirmar" href="index.html">
                         </div>
                     </form>
                 </div>
                 <div id="btn3">
-                    <a id="voltar" href="cadastro.html">Voltar</a>
+                    <a id="voltar" href="cadastroCPF.html">Voltar</a>
                 </div>
                 <!-- /#btn3 -->
             </div>

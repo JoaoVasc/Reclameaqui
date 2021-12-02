@@ -28,13 +28,13 @@
         <section class="container">
             <div id="registration-CPF">
                 <div id="register-CPF">
-                    <form action="cadastro1.html">
+                    <form onsubmit="return goToPag(this)";>
                         <fieldset>
                             <legend><b>Criar Conta</b></legend>
                             <br />
                             <label for="ap_citizen_name" class="cpf-form-label">Informe Seu CPF</label>
                             <input class="inputuser" type="text" name="cpf" id="cpf" maxlength="14" autocomplete="off"
-                            onclick="clearImput()" onkeyup="cpfMask(this.value)" required>
+                            onclick="clearImput()" onkeypress="cpfMask(this.value)" required>
                         </fieldset>
                         <div class="row">
                             <div id="message"></div>

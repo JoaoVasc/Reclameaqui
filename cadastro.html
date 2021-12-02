@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/handlingCPF.js"></script>
         <title>Cadastro</title>
     </head>
     <body>
@@ -29,8 +30,8 @@
             <div id="cdp1">
                 <h2>Olá, selecione qual o seu Perfil</h2>
                 <div id="btn2">
-                    <div><a id="cidadao" href="cadastroCPF.html">Sou Cidadão</a></div>
-                    <div><a id="ouvidor" href="ouvidor.html">Sou Ouvidor</a></div>  
+                    <div onclick="userType(0)"><a id="cidadao" href="cadastroCPF.html">Sou Cidadão</a></div>
+                    <div onclick="userType(1)"><a id="ouvidor" href="cadastroCPF.html">Sou Ouvidor</a></div>  
                 </div>
             </div>
         </section>

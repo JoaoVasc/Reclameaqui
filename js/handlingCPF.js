@@ -1,6 +1,6 @@
 "use strict";
 
-var cpfInput = 'cpf'
+var cpfInput = 'cpf';
 
 function clearImput(){
     document.getElementById(cpfInput).value = ""
@@ -56,6 +56,8 @@ function contentValidation(){
         messageAlert();
         document.getElementById('message').style.display = '';
         event.preventDefault();
+    } else {
+        localStorage.setItem('cpfNumFormat', document.getElementById(cpfInput).value);
     };
 };
 
@@ -70,3 +72,24 @@ function cpfMask() {
     };
 
 };
+
+function userType(param){
+    localStorage.setItem('value', param)
+};
+
+function goToPag(form){
+
+    let userTypeValue = localStorage.getItem('value');
+
+    if (userTypeValue == 0){
+        userTypeValue = "Cidadao";
+    } else {
+        userTypeValue = "Ouvidor";
+    };
+
+    form.action = "cadastro"+userTypeValue+".html";
+};
+
+function writeCpf(){
+    document.getElementById(cpfInput).value = localStorage.getItem('cpfNumFormat');
+}
