@@ -5,9 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/idReclamacaoGenerator.js"></script>
         <title>Reclame Aqui</title>
     </head>
-    <body>
+    <body onload="idGenerator()">
         <header>
             <div id="logo"><a href="index.html"><img src="img/SES.png" alt=""></a></div>
             <div id="pernambuco">
@@ -34,16 +35,13 @@
                     <div><a href="" class="btnl">Desconectar</a></div>
                 </aside>
                 <div id="reclamacoes">
-                    <h2>Fale um pouco sobre oque ocorreu:</h2>
-                            <label class="rf" for="titulo">Título</label>
-                                <input class="rf" id="titulo" type="text"><br/>
-                            <label class="rf" for="descricao">Descrição</label>
-                                <input class="rf" id="texto" type="text"><br/>
-                            <label class="rf" for="arquivos">Arquivos</label>
-                                <input class="rf" id="arquivo" type="file">
-                            <label class="rf" for="data">Data do ocorrido</label>
-                                <input class="rf" type="date">
-                    <div id="final"><a href="reclamacao5.html" id="seguir">Seguir</a>
+                    <h2>Reclamação Aberta! Acompanhe na guia "Histórico de Reclamações"</h2>
+                    <fieldset id="idreclamacao">
+                        <legend id="idlegendreclamacao"><b>Identificador da Reclamação</b></legend>
+                        <br />
+                        <input id="reclamacaoNumID" class="inputIdReclamacao" type="text" readonly=“true”>
+                    </fieldset>
+                    <div id="final"><a href="historico.html" id="seguir">Seguir</a>
                         <h5>PÁGINA 4/4</h5>
                     </div>
                 </div> 
