@@ -1,6 +1,9 @@
 "use strict";
 
 function loginItensValidation(){
+
+    let loginDefault = "test@email.com"
+    let passwDefault = "123123"
     
     document.getElementById('message').style.display = ''
     let login = document.getElementById('email').value
@@ -8,11 +11,11 @@ function loginItensValidation(){
     let message = document.getElementById('message');
     let msg = ""
 
-    if (login === "test@email.com" && passw === "123123"){
+    if (login === loginDefault && passw === passwDefault){
         window.location.href = "historico.html";
     }else{
         switch(login){
-            case "test@email.com":
+            case loginDefault:
                 msg = 'SENHA incorreta!'
                 break;
             default:
