@@ -38,11 +38,14 @@
                                     <td><input class="inputuser" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF(obrigatório)" readonly=“true” required></td>
                                 </tr>
                                 <tr>
-                                    <td><input class="inputuser" type="text" name="nome" id="nome" placeholder="Nome completo(obrigatório)" required></td>
+                                    <td><input class="inputuser" type="text" name="nome" id="nome" placeholder="Nome completo" required></td>
+                                    <td class="required"></td>
                                 </tr>
                                 <tr>
                                     <td><input class="inputuser" type="text" name="matricula" id="matricula" placeholder="Matrícula" maxlength="10"></td>
-                                    <td><input class="inputuser" type="text" name="alocacao" id="alocacao" placeholder="Alocação(obrigatório)" required></td>
+                                    <td class="required"></td>
+                                    <td><input class="inputuser" type="text" name="alocacao" id="alocacao" placeholder="Alocação" required></td>
+                                    <td class="required"></td>
                                 </tr>
                                 <tr>
                                     <td><select name="tipoServidor" id="tipoServidor">
@@ -52,18 +55,25 @@
                                         <option value="Servidor">Terceirizado</option>
                                     </select>
                                     </td>
+                                    <td class="required"></td>
                                 </tr>
                                 <tr>
                                     <td><input type="text" class="inputuser" name="cidade" id="cidade" placeholder="cidade"></td>
+                                    <td class="required"></td>
                                     <td><input type="text" class="inputuser" name="estado" id="estado" placeholder="estado"></td>
+                                    <td class="required"></td>
                                 </tr>
                                 <tr>
                                     <td><input type="email" class="inputuser" name="email" id="email1" placeholder="e-mail para cadastro"></td>
+                                    <td class="required"></td>
                                     <td><input type="email" class="inputuser" name="c-email" id="email1" placeholder="confirme o e-mail"></td>
+                                    <td class="required"></td>
                                 </tr>
                                 <tr>
                                     <td><input type="password" class="inputuser" name="senha" id="senha1" placeholder="senha" required></td>
+                                    <td class="required"></td>
                                     <td><input type="password" class="inputuser" name="c-senha" id="senha1" placeholder="confirme sua senha" required></td>
+                                    <td class="required"></td>
                                 </tr>
                             </table>
                         </fieldset>

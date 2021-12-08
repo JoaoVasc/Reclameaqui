@@ -204,7 +204,7 @@ fieldset{
 }
 #ouvidorc{
     border: solid 3px #fff;
-    width: 430px;
+    width: 480px;
 }
 #cpf, #nome{
     width: 250px;
@@ -438,4 +438,10 @@ a:link
     font-weight: bold;
     font-size:40px;
     color: #363636;
+}
+.required:after {
+    content:" *";
+    font-size:20px;
+    font-weight: bold;
+    color: red;    
 }
