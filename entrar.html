@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/59dd9f0f2d.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">        
+        <script src="js/loginValidation.js"></script>
         <title>Entrar</title>
     </head>
     <body>
@@ -34,19 +35,28 @@
                         <br/>
                     <div class="inputbox">
                         <input class="inputuser" type="email" name="email" id="email"
-                        placeholder="Informe seu CPF,Email ou Matrícula">
+                        placeholder="Informe seu CPF,Email ou Matrícula" onkeypress="clearMsg()">
                     </div>   
                     <div class="inputbox">
                         <input class="inputuser" type="password" name="senha" id="senha"
-                        placeholder="Digite sua Senha">
+                        placeholder="Digite sua Senha" onkeypress="clearMsg()">
+                    </div>
+                    <div class="row">
+                        <div id="message"></div>
+                    </div>
+                    <div id="createaccount">
+                        <p>Não tem uma conta? <a href="cadastro.html">Cadastrar</a></p>
+                    </div>
+                    <div id="setnewpass">
+                        <p>Esqueceu sua senha? <a href="#">Recuperar</a></p>
                     </div>
                 </fieldset> 
                 </form>
                 <div id="submit">
-                    <input type="submit" value="Confirmar" id="confirmar">
+                    <input type="submit" value="Confirmar" id="confirmar" onclick="loginItensValidation()">
                 </div>
                 <div id="btn3">
-                    <a id="voltar" href="cadastro.html">Voltar</a>
+                    <a id="voltar" href="index.html">Voltar</a>
                 </div>
             </div>
         </section>

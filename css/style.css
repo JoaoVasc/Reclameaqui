@@ -391,3 +391,30 @@ aside{
     margin-top: 28px;
     margin-right: 3px;
 }
+#createaccount, #setnewpass{
+    font-size:13px;
+    padding-left: 15px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+a:link 
+{ 
+ text-decoration:none; 
+}
+.message{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: auto;
+    padding-right: auto;
+    transition: 0.5s all;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size:12px;
+    font-weight: bold;
+    color: #fff;
+    background: #cd0000;
+    border: none;
+}
