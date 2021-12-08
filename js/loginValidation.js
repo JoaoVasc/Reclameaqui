@@ -12,6 +12,7 @@ function loginItensValidation(){
     let msg = ""
 
     if (login === loginDefault && passw === passwDefault){
+        document.getElementById('message').style.display = 'none'
         window.location.href = "historico.html";
     }else{
         switch(login){
