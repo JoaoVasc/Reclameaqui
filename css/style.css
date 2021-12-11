@@ -269,6 +269,7 @@ td{
 }
 aside{
     float: left;
+    margin-left: 1%;
     background: rgba(255, 255, 255, 0.856);
     width: 25%; 
     height: 530px;
