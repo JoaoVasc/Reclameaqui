@@ -347,7 +347,7 @@ aside{
 #reclamacoes div{
     margin-top: 130px;
 }
-#seguir{
+#seguir,#concluir{
     display: block;
     text-align: center;
     width: 150px;
@@ -360,12 +360,14 @@ aside{
     text-decoration: none;
     margin: 0 auto;
 }
-#seguir:hover{
+#seguir:hover,#concluir:hover{
     border: #fff solid 1px;
     color: #fff;
     background: #0d0;
 }
-
+#concluir{
+    margin-top:50px;
+}
 #titulo{
     width: 610px;
     border-radius: 15px;
