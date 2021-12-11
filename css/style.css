@@ -269,6 +269,7 @@ td{
 }
 aside{
     float: left;
+    margin-left: 1%;
     background: rgba(255, 255, 255, 0.856);
     width: 25%; 
     height: 530px;
@@ -278,6 +279,10 @@ aside{
     background: rgba(255, 255, 255, 0.856);
     width: 73%;
     height: 530px;
+}
+#pg4-4{
+    margin-left: 835px;
+    margin-top: 80px;
 }
 #opcoes{
     margin: 0 auto;
@@ -343,7 +348,7 @@ aside{
 #reclamacoes div{
     margin-top: 130px;
 }
-#seguir{
+#seguir,#concluir{
     display: block;
     text-align: center;
     width: 150px;
@@ -356,10 +361,13 @@ aside{
     text-decoration: none;
     margin: 0 auto;
 }
-#seguir:hover{
+#seguir:hover,#concluir:hover{
     border: #fff solid 1px;
     color: #fff;
     background: #0d0;
+}
+#concluir{
+    margin-top:50px;
 }
 #titulo{
     width: 610px;
@@ -386,6 +394,7 @@ aside{
 }
 #final{
     display: flex;
+    border: solid red 1px;
 }
 #final h5{
     margin-top: 28px;
@@ -421,7 +430,7 @@ a:link
 #idreclamacao{
     border: none;
     text-align: center;
-    margin-left: 21%;
+    margin:0 auto;
 }
 .inputIdReclamacao{
     outline: none;
