@@ -279,6 +279,10 @@ aside{
     width: 73%;
     height: 530px;
 }
+#pg4-4{
+    margin-left: 835px;
+    margin-top: 80px;
+}
 #opcoes{
     margin: 0 auto;
     width: 70%;
@@ -361,6 +365,7 @@ aside{
     color: #fff;
     background: #0d0;
 }
+
 #titulo{
     width: 610px;
     border-radius: 15px;
@@ -386,6 +391,7 @@ aside{
 }
 #final{
     display: flex;
+    border: solid red 1px;
 }
 #final h5{
     margin-top: 28px;
