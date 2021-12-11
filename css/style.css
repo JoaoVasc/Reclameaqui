@@ -429,7 +429,7 @@ a:link
 #idreclamacao{
     border: none;
     text-align: center;
-    margin-left: 21%;
+    margin:0 auto;
 }
 .inputIdReclamacao{
     outline: none;
