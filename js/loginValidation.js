@@ -20,7 +20,7 @@ function loginItensValidation(){
                 msg = 'SENHA incorreta!'
                 break;
             default:
-                msg = 'Dado de LOGIN não cadastrado ou inválido!'
+                msg = 'Dados de LOGIN não cadastrado ou inválidos!'
                 break;
         }
         message.innerHTML = msg;

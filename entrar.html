@@ -36,7 +36,7 @@
                         <label class="login-form-label">
                             CPF, Email ou Matrícula
                             <input class="inputuser" type="email" name="email" id="email"
-                            placeholder="Informe seu CPF,Email ou Matrícula" onkeypress="clearMsg()">
+                            onkeypress="clearMsg()">
                         </label>
                         
                     </div>   
@@ -44,7 +44,7 @@
                         <label class="login-form-label">
                             Senha
                             <input class="inputuser" type="password" name="senha" id="senha"
-                            placeholder="Digite sua Senha" onkeypress="clearMsg()">
+                            onkeypress="clearMsg()">
                         </label>
                     </div>
                     <div class="row">
@@ -53,20 +53,17 @@
                     <div id="submit">
                         <input type="submit" value="Confirmar" class="btn-confirmar" onclick="loginItensValidation()">
                     </div>
-                    <div id="createaccount">
-                        <p>Não tem uma conta? <a href="cadastro.html">Cadastrar</a></p>
-                    </div>
-                    <div id="setnewpass">
-                        <p>Esqueceu sua senha? <a href="#">Recuperar</a></p>
+                    <div class="esqueci-senha">
+                        <p>Esqueceu sua senha? <a class="link-esqueci-senha" href="#">Clique aqui para recuperar</a></p>
                     </div>
                 </fieldset> 
             </form>
-                <div id="submit">
-                    <input type="submit" value="Confirmar" id="confirmar" onclick="loginItensValidation()">
+            <fieldset class="nao-tenho-cadastro">
+                <div class="txt-nao-tenho-cadastro">
+                    <p>Não tem uma conta?</p> 
+                    <input type="submit" value="Cadastrar" class="btn-cadastrar-login">
                 </div>
-                <div id="btn3">
-                    <a id="voltar" href="index.html">Voltar</a>
-                </div>
+            </fieldset>
             </div>
         </section>
     </body>

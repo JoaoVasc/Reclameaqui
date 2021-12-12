@@ -1,22 +1,16 @@
-.area-de-login{
+.area-de-login, .nao-tenho-cadastro{
     border: 0;
-    width: auto;
     margin-top: 2%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.area-de-login{
     background-color: rgba(237, 237, 237, 0.7);
     padding: 0px;
-    margin: 20px auto;
+    margin: 10px auto;
     margin-left: 40%;
     margin-right: 40%;
     display: block;
-
     align-items: center;
     justify-content: left;
-    padding-left: 2% ;
-    padding-right: 1% ;
+    padding-left: auto ;
+    padding-right: auto;
     height: auto;
     width: auto;
 }
@@ -24,6 +18,8 @@
     color: #4F4F4F;
     font-weight: bold;
     font-size: 15px;
+    margin-left: 7%;
+    margin-right: auto;
 }
 legend{
     color: #363636;
@@ -33,6 +29,9 @@ legend{
     padding-bottom: 5px;
     font-weight: bold;
     font-size: 25px;
+    margin-left: 7%;
+    margin-right: auto;
+
 }
 .inputuser{
     text-align: center;
@@ -43,16 +42,94 @@ legend{
     background: #DCDCDC;
     font-weight: bold;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+input:focus{
+    box-shadow: 0 0 0.3em grey;
+    outline: 0;
 }
 .btn-confirmar{
     text-align: center;
     width: 86%;
-    height: 35px;
+    height: 38px;
     margin-top: 5%;
     margin-bottom: 10px;
-    border: 2px solid #A9A9A9;
-    background: #DCDCDC;
+    border: 2px solid #000000;
+    background: #093a13;
     font-weight: bold;
     display: block;
     cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-confirmar:hover{
+    color: #fff;
+    background: #00871b;
+    border: #00871b;
+}
+.message{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.5s all;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size:12px;
+    font-weight: bold;
+    color: #fff;
+    background: #cd0000;
+    border: none;
+}
+.esqueci-senha{
+    margin-top: 10%;
+    font-size:12px;
+    padding-left: auto;
+    padding-right: auto;
+    color: #363636;
+    font-weight: bold;
+    margin-bottom: 10%;
+    margin-left: 7%;
+    margin-right: 15%;
+}
+.link-esqueci-senha{
+    text-decoration:none;
+    font-size:12px;
+    font-weight: bold;
+    color: #2c87af;
+}
+.txt-nao-tenho-cadastro{
+    margin-top: 5%;
+    font-size:15px;
+    padding-left: auto;
+    padding-right: auto;
+    color: #363636;
+    font-weight: normal;
+    margin-bottom: 15%;
+    text-align: center;
+}
+.btn-cadastrar-login{
+    text-align: center;
+    width: 86%;
+    height: 38px;
+    margin-top: 5%;
+    margin-bottom: 5px;
+    border: 2px solid #000000;
+    background: #153c63;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-cadastrar-login:hover{
+    color: #fff;
+    background: #2c87af;
+    border: #2c87af;
 }
