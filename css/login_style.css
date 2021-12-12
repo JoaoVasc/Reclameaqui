@@ -42,4 +42,17 @@ legend{
     border: 2px solid #A9A9A9;
     background: #DCDCDC;
     font-weight: bold;
+    display: block;
+}
+.btn-confirmar{
+    text-align: center;
+    width: 86%;
+    height: 35px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    border: 2px solid #A9A9A9;
+    background: #DCDCDC;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
 }
