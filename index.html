@@ -4,46 +4,91 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/base_style.css">
         <title>Reclame Aqui</title>
     </head>
     <body>
         <header>
-            <div id="logo"><a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a></div>
-            <div id="pernambuco">
-                <img src="https://cdn.pe.gov.br/default/governo/default/assets/img/marca_brasao_transp_azul_hor_184x48.png" width="240" alt="imagem-brasao-gov-pe">
+            <div class="logosSES">
+                <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a>
+                <img src="img/brasao-gov-pe.png" alt="imagem-brasao-gov-pe">                
             </div>
-            <div id="btn">
-                <div><a id="entrar" href="./entrar.html">Entrar</a></div>
-                <div><a id="cadastrar" href="cadastro.html">Cadastrar</a></div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Acompanhe sua reclamação</a></li>
-                    <li><a href="#">Cadastre uma empresa</a></li>
-                </ul>
-            </nav>
         </header>
-        <!--Fim do cabecalho-->
-        <section id="principal">
-            <div id="reclame"><a href="reclameaqui.html"></a></div>
+        <div class="home-menu">
+            <table class="menu-principal">
+                <tr>
+                    <th class="item-de-tabela-1 btn-menu"><a class="itens-menu" id="entrar" href="./entrar.html">Entrar</a></th>
+                    <th class="item-de-tabela-3 separador">|</th>
+                    <th class="item-de-tabela-2 btn-menu"><a class="itens-menu" id="cadastrar" href="cadastro.html">Cadastrar</a></th>
+                </tr>
+            </table>
+        </div>
+        <section class="principal-reclame-aqui">
+            <div class="home-principal">
+                <table class="tabela-interacao">
+                    <tr>
+                        <th id="botao-reclame"><a href="reclamacao.html"></a></th>
+                    </tr>
+                    <tr>
+                        <th id="separador-tabela-interacao"> Ou </th>
+                    </tr>
+                    <tr>
+                        <!--<th>Pesquise por uma reclamação</th>-->
+                    </tr>
+                    <tr>
+                        <table class="area-de-busca">
+                            <tr>
+                                <th><img src="img/lupa.png" width="15" alt="lupa" class="lupa-img"></th>               
+                                <th><input type="search" class="buscar-reclamacao" placeholder="Busque uma reclamação"></th>
+                                <th class="btn-buscar btn-menu"><a class="item-buscar" id="cadastrar" href="#">Buscar</a></th>
+                            </tr>
+                        </table>                        
+                    </tr>
+                </table>
+            </div>
+        </section>
             <section id="feed">
-                <article>
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Enim, facilis impedit tempora nam temporibus quis corrupti 
-                        ipsam dolor nisi quo ea animi ullam magnam qui aliquid dicta 
-                        nesciunt officia. Magnam!</p>
-                </article>
-                <article>
-                    <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Enim, facilis impedit tempora nam temporibus quis corrupti 
-                        ipsam dolor nisi quo ea animi ullam magnam qui aliquid dicta 
-                        nesciunt officia. Magnam!</p>
-                </article>
-            </section>
-            <!-- /#feed -->
+                <table class="noticias">
+                    <caption>ÚLTIMAS NOTÍCIAS</caption>
+                    <tr>
+                        <th class="data">
+                            <div class="dia">08</div>
+                            <div class="mes">DEZ</div> 
+                            <div class="ano">2021</div>
+                        </th>         
+                        <th class="colunas-noticias">
+                            <article>
+                                <h3>HPS comemora 10 anos com 100 mil atendimentos na emergência</h3>
+                                <p>Unidade também realizou mais de 19 mil cirurgias e 208 mil consultas ambulatoriais no período</p>
+                            </article>                            
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="data">
+                            <div class="dia">06</div>
+                            <div class="mes">DEZ</div> 
+                            <div class="ano">2021</div>             
+                        <th class="colunas-noticias">
+                            <article>
+                                <h3>Informações sobre centros de testagem e Atende em Casa</h3>
+                                <p>Boletins epidemiológicos também estão disponíveis para baixar</p>
+                            </article>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="data">
+                            <div class="dia">06</div>
+                            <div class="mes">DEZ</div> 
+                            <div class="ano">2021</div>
+                        </th>               
+                        <th class="colunas-noticias">
+                            <article>
+                                <h3>Informações sobre centros de testagem e Atende em Casa</h3>
+                                <p>Boletins epidemiológicos também estão disponíveis para baixar</p>
+                            </article>
+                        </th>
+                    </tr>
+                </table>  
         </section>
         <!-- /#principal -->
     </body>
