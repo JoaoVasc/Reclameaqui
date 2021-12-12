@@ -1,0 +1,124 @@
+#botao-reclame a{
+    display: block;
+    background: url(../img/reclame.png);
+    height: 90px;
+    width: 326px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+#botao-reclame a:hover{
+    display: block;
+    background: url(../img/reclame.png) right;
+    height: 90px;
+    width: 326px;
+}
+.tabela-interacao{
+    width: auto;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#separador-tabela-interacao{
+    width:auto;
+    height: 100px;
+    width:200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #153c63;
+}
+.buscar-reclamacao{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    background: #ffffff;
+    font-size:20px;
+    color: #363636;
+}
+.area-de-busca{
+    border:1pt solid rgb(198, 198, 198);
+    width: auto;
+    margin-top: 0.5%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: auto;
+}
+.lupa-img{
+    margin-right: 5px;
+    margin-left: 18px;    
+}
+.item-buscar{
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn-buscar{
+    width:100px;
+    height: 20px;
+    font-weight: normal;
+    text-align: center;
+    transition: 0.1s all;
+    cursor: pointer;
+    font-weight: bold;
+    background: #153c63;
+    border: none;
+}
+.noticias{
+    width: auto;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    width:50%;
+}
+caption{
+    text-align: left;
+    font-weight: bold;
+    color: #153c63;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+.colunas-noticias{
+    font-weight: normal;
+    font-size: 15px;    
+    margin-bottom: 55%;
+    border-bottom:1pt solid rgb(198, 198, 198);
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+article{
+    text-align: left;
+}
+.data{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom:1pt solid rgb(198, 198, 198);
+    border-right: 1pt solid rgb(198, 198, 198);
+    height: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dia{
+    color: #153c63;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.mes{
+    color: #4F4F4F;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.ano{
+    color: #4F4F4F;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
