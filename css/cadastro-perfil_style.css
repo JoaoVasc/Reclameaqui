@@ -1,0 +1,54 @@
+.selec-perfil{
+    border: 0;
+    margin-top: 20%;
+    background-color: rgba(237, 237, 237, 0.7);
+    padding: 10px;
+    margin: 80px auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-left: auto ;
+    padding-right: auto;
+    height: auto;
+    width: 550px;
+    text-align: center;
+}
+
+.area-ouvidor{
+    height: 300px;
+    width: 250px;
+    background-color: #a4a4a4;
+    float: right;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 150%;
+    margin-right: auto;
+    margin: 80px auto;
+}
+.area-cidadao{
+    height: 300px;
+    width: 250px;
+    background-color: #a4a4a4;
+    float: left;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 150%;
+    margin-right: auto;
+    margin: 80px auto;
+}
+#perfis div:hover{
+    background-color: #153c63;
+    box-shadow: 0 0 2em #303030;
+}
+#cidadao, #ouvidor{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;;
+    color: #ffffff;
+}
