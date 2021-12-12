@@ -27,18 +27,25 @@
         </div>
         <!--Fim do cabecalho-->
         <section class="container">
-            <div class="cdp1">
+            <div>
                 <form action="">
                     <fieldset class="area-de-login">
-                        <legend>Entrar</legend>
+                        <legend>Fazer Login</legend>
                         <br/>
                     <div class="inputbox">
-                        <input class="inputuser" type="email" name="email" id="email"
-                        placeholder="Informe seu CPF,Email ou Matrícula" onkeypress="clearMsg()">
+                        <label class="login-form-label">
+                            CPF, Email ou Matrícula
+                            <input class="inputuser" type="email" name="email" id="email"
+                            placeholder="Informe seu CPF,Email ou Matrícula" onkeypress="clearMsg()">
+                        </label>
+                        
                     </div>   
                     <div class="inputbox">
-                        <input class="inputuser" type="password" name="senha" id="senha"
-                        placeholder="Digite sua Senha" onkeypress="clearMsg()">
+                        <label class="login-form-label">
+                            Senha
+                            <input class="inputuser" type="password" name="senha" id="senha"
+                            placeholder="Digite sua Senha" onkeypress="clearMsg()">
+                        </label>
                     </div>
                     <div class="row">
                         <div id="message"></div>

@@ -5,13 +5,41 @@
     margin-right: auto;
     margin-left: auto;
 }
-.cdp1{
+.area-de-login{
     background-color: rgba(237, 237, 237, 0.7);
     padding: 0px;
-    margin: 200px auto;
+    margin: 20px auto;
     margin-left: 40%;
     margin-right: 40%;
-    display: flex;
+    display: block;
+
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 2% ;
+    padding-right: 1% ;
+    height: auto;
+    width: auto;
+}
+.login-form-label{
+    color: #4F4F4F;
+    font-weight: bold;
+    font-size: 15px;
+}
+legend{
+    color: #363636;
+    text-align: left;
+    border: none;
+    padding-top: 25%;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.inputuser{
+    text-align: center;
+    width: 85%;
+    height: 35px;;
+    margin-bottom: 10px;
+    border: 2px solid #A9A9A9;
+    background: #DCDCDC;
+    font-weight: bold;
 }
