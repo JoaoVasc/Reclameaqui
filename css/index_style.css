@@ -92,8 +92,10 @@ caption{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-article{
+.noticia-1, .noticia-2, .noticia-3{
     text-align: left;
+    text-decoration: none;
+    color: #232323;
 }
 .data{
     padding-left: 15px;
