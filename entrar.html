@@ -5,32 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/59dd9f0f2d.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/style.css">        
+        <link rel="stylesheet" href="css/base_style.css">
+        <link rel="stylesheet" href="css/login_style.css">        
         <script src="js/loginValidation.js"></script>
         <title>Entrar</title>
     </head>
     <body>
         <header>
-            <div id="logo"><a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a></div>
-            <div id="pernambuco">
-                <img src="https://cdn.pe.gov.br/default/governo/default/assets/img/marca_brasao_transp_azul_hor_184x48.png" width="240" alt="imagem-brasao-gov-pe">
+            <div class="logosSES">
+                <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a>
+                <img src="img/brasao-gov-pe.png" alt="imagem-brasao-gov-pe">                
             </div>
-            <div id="btn">
-                <div><a id="entrar" href="./entrar.html">Entrar</a></div>
-                <div><a id="cadastrar" href="cadastro.html">Cadastrar</a></div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Acompanhe sua reclamação</a></li>
-                    <li><a href="#">Cadastre uma empresa</a></li>
-                </ul>
-            </nav>
         </header>
+        <div class="home-menu">
+            <table class="menu-principal">
+                <tr>
+                    <th class="item-de-tabela-3 separador">|</th>
+                    <th class="item-de-tabela-cadastrar btn-menu"><a class="itens-menu" id="cadastrar" href="cadastro.html">Cadastrar</a></th>
+                </tr>
+            </table>
+        </div>
         <!--Fim do cabecalho-->
         <section class="container">
-            <div id="cdp1">
+            <div class="cdp1">
                 <form action="">
-                    <fieldset id="entrando">
+                    <fieldset class="area-de-login">
                         <legend>Entrar</legend>
                         <br/>
                     <div class="inputbox">
@@ -51,7 +50,7 @@
                         <p>Esqueceu sua senha? <a href="#">Recuperar</a></p>
                     </div>
                 </fieldset> 
-                </form>
+            </form>
                 <div id="submit">
                     <input type="submit" value="Confirmar" id="confirmar" onclick="loginItensValidation()">
                 </div>

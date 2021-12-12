@@ -43,12 +43,18 @@
     color: #363636;
 }
 .area-de-busca{
-    border:1pt solid rgb(198, 198, 198);
+    
     width: auto;
     margin-top: 0.5%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: auto;
+    padding-right: auto;    
+}
+.area-de-busca tr{
+    box-shadow: 0 0 0.1em grey;
+}
+.area-de-busca tr:hover{
+    box-shadow: 0 0 1em grey;
 }
 .lupa-img{
     margin-right: 5px;

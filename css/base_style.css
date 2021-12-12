@@ -38,7 +38,7 @@ header{
     color: #ffffff;
     text-decoration: none;
 }
-.item-de-tabela-1{
+.item-de-tabela-entrar{
     width:150px;
     height: 30px;
     font-weight: normal;
@@ -48,7 +48,7 @@ header{
     background: #153c63;
     border: none;
 }
-.item-de-tabela-2{
+.item-de-tabela-cadastrar{
     width:150px;
     height: 30px;
     font-weight: normal;

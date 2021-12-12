@@ -1,0 +1,17 @@
+.area-de-login{
+    border: 0;
+    width: auto;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.cdp1{
+    background-color: rgba(237, 237, 237, 0.7);
+    padding: 0px;
+    margin: 200px auto;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
