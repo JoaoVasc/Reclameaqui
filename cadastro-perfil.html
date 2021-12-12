@@ -27,10 +27,22 @@
         <!--Fim do cabecalho-->
         <section class="container">
             <div class="selec-perfil">
-                <h2>Olá, selecione qual o seu Perfil</h2>
+                <h2>Olá, selecione qual o seu Perfil:</h2>
                 <div id="perfis">
-                    <a id="ouvidor" href="cadastroCPF.html"><div class="area-ouvidor" onclick="userType(1)"><img src="img/user-profile.png" alt="imagem-perfil-de-usuario" width="250">Ouvidor</div></a>
-                    <a id="cidadao" href="cadastroCPF.html"><div class="area-cidadao" onclick="userType(0)"><img src="img/user-profile.png" alt="imagem-perfil-de-usuario" width="250">Cidadão</div></a>
+                    <table>
+                        <tr>
+                            <td class="perfis-table">
+                                <a id="ouvidor" href="cadastroCPF.html"><div class="area-ouvidor" onclick="userType(1)"><img src="img/user-profile.png" alt="imagem-perfil-de-usuario" width="250">Ouvidor</div></a>
+                            </td>
+                            <td class="perfis-table">
+                                <a id="cidadao" href="cadastroCPF.html"><div class="area-cidadao" onclick="userType(0)"><img src="img/user-profile.png" alt="imagem-perfil-de-usuario" width="250">Cidadão</div></a>
+                            </td>
+                        </tr>
+                    </table>
+                    <section class="selec-perfil-info">
+                        <h4>&#9656 Se deseja abrir reclamações, selecione o perfil de <b>Cidadão</b>.</h4>
+                        <h4>&#9656 Se faz parte da equipe de ouvidoria da SES, selecione <b>Ouvidor</b>.</h4>
+                </section>
                 </div>
             </div>
         </section>

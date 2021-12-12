@@ -1,9 +1,7 @@
 .selec-perfil{
-    border: 0;
-    margin-top: 20%;
     background-color: rgba(237, 237, 237, 0.7);
-    padding: 10px;
-    margin: 80px auto;
+    padding: 5px;
+    margin: 15px auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -14,13 +12,18 @@
     height: auto;
     width: 550px;
     text-align: center;
+    color: #282828;
 }
-
+.perfis-table{
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    width: 300px;
+}
 .area-ouvidor{
     height: 300px;
     width: 250px;
     background-color: #a4a4a4;
-    float: right;
     display: block;
     align-items: center;
     justify-content: center;
@@ -33,7 +36,6 @@
     height: 300px;
     width: 250px;
     background-color: #a4a4a4;
-    float: left;
     display: block;
     align-items: center;
     justify-content: center;
@@ -51,4 +53,13 @@
     font-weight: bold;
     font-size: 30px;;
     color: #ffffff;
+}
+h4{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    color: #2b2b2b;
+}
+b{
+    color: #153c63;
 }
