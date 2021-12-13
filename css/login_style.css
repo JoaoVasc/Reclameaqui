@@ -54,7 +54,7 @@ input:focus{
     height: 38px;
     margin-top: 5%;
     margin-bottom: 10px;
-    border: 2px solid #000000;
+    border: 2px solid #093a13;
     background: #093a13;
     font-weight: bold;
     display: block;
@@ -117,7 +117,7 @@ input:focus{
     height: 38px;
     margin-top: 5%;
     margin-bottom: 5px;
-    border: 2px solid #000000;
+    border: 2px solid #153c63;
     background: #153c63;
     font-weight: bold;
     display: block;
