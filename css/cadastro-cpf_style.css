@@ -12,7 +12,7 @@
     justify-content: left;
     padding-left: auto ;
     padding-right: auto;
-    height: 450px;
+    height: 400px;
     width: auto;
 }
 fieldset{
@@ -117,4 +117,7 @@ hr{
     color: #fff;
     background: #cd0000;
     border: none;
+}
+.fazer-login{
+    font-weight: bold;
 }
