@@ -1,7 +1,7 @@
 .selec-perfil{
     background-color: rgba(237, 237, 237, 0.7);
-    padding: 5px;
-    margin: 15px auto;
+    padding: 15px;
+    margin: 20px auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -9,7 +9,7 @@
     justify-content: center;
     padding-left: auto ;
     padding-right: auto;
-    height: 561px;
+    height: 460px;
     width: 550px;
     text-align: center;
     color: #282828;
@@ -30,7 +30,7 @@
     text-align: center;
     margin-left: 150%;
     margin-right: auto;
-    margin: 80px auto;
+    margin: 35px auto;
 }
 .area-cidadao{
     height: 300px;
@@ -42,7 +42,7 @@
     text-align: center;
     margin-left: 150%;
     margin-right: auto;
-    margin: 80px auto;
+    margin: 35px auto;
 }
 #perfis div:hover{
     background-color: #153c63;

@@ -94,110 +94,13 @@ nav ul li{
     color: #389cc7;
     background: #fff;
 }
-#registration-CPF{
-    text-align: left;
-    padding-left: 3%;
-    padding-right: -2%;
-    height: 500px;
-    width: 340px;
-    background: #fff;
-    background-repeat: no-repeat;
-}
-fieldset{
-    border: none;
-}
-legend{
-    color: #363636;
-    text-align: left;
-    border: none;
-    padding-top: 45px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    font-size: 25px;
-}
-.cpf-form-label{
-    color: #4F4F4F;
-    font-weight: bold;
-    font-size: 15px;
-}
-#cpf{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 5px;
-    border: 2px solid #A9A9A9;
-    background: #DCDCDC;
-    font-weight: bold;
-}
-#cpf:hover{
-    border: 2px solid #696969;
-}
-input[type="text"]
-{
-    font-size:20px;
-    color: #363636;
-}
-#registration-botton{
-    text-align: center;
-    margin-right: 10%;
-}
-.btnRegister{
-    text-align: center;
-    width: 80px;
-    border-radius: 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 78px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    transition: 0.1s all;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: auto;
-    cursor: pointer;
-    color: #fff;
-    background: #093a13;
-    border: none;
-}
-.btn_green:hover{
-    color: #fff;
-    background: #00871b;
-}
-#legalTermsText,#iHaveAccont{
-    margin-top: 25px;
-    font-size:12px;
-    text-decoration:none;
-    padding-left: 15px;
-    padding-right: 50px;
 
-}
-a:link 
-{ 
- text-decoration:none; 
-}
-hr{
-    background: #000000;
-    margin-top: 25px;
-    margin-left: 15px;
-    margin-right: 50px;
-    border-radius: 11px;
-}
-.message{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 78px;
-    transition: 0.5s all;
-    text-decoration: none;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: 42px;
-    font-size:12px;
-    font-weight: bold;
-    color: #fff;
-    background: #cd0000;
-    border: none;
-}
+
+
+
+
+
+
+
+
+

@@ -28,42 +28,42 @@
         <!--Fim do cabecalho-->
         <section class="container">
             <div>
-                <form action="">
+                <form onsubmit="return loginItensValidation(this)">
                     <fieldset class="area-de-login">
                         <legend>Fazer Login</legend>
                         <br/>
-                    <div class="inputbox">
-                        <label class="login-form-label">
-                            CPF, Email ou Matrícula
-                            <input class="inputuser" type="email" name="email" id="email"
-                            onkeypress="clearMsg()">
-                        </label>
-                        
-                    </div>   
-                    <div class="inputbox">
-                        <label class="login-form-label">
-                            Senha
-                            <input class="inputuser" type="password" name="senha" id="senha"
-                            onkeypress="clearMsg()">
-                        </label>
+                        <div class="inputbox">
+                            <label class="login-form-label">
+                                CPF, Email ou Matrícula
+                                <input class="inputuser" type="email" name="email" id="email"
+                                onkeypress="clearMsg()">
+                            </label>
+                            
+                        </div>   
+                        <div class="inputbox">
+                            <label class="login-form-label">
+                                Senha
+                                <input class="inputuser" type="password" name="senha" id="senha"
+                                onkeypress="clearMsg()">
+                            </label>
+                        </div>
+                        <div class="row">
+                            <div id="message"></div>
+                        </div>
+                        <div id="submit">
+                            <input type="submit" value="Confirmar" class="btn-confirmar" onclick="typebottom(0)">
+                        </div>
+                        <div class="esqueci-senha">
+                            <p>Esqueceu sua senha? <a class="link-esqueci-senha" href="#">Clique aqui para recuperar</a></p>
+                        </div>
+                    </fieldset>
+                    <fieldset class="nao-tenho-cadastro">
+                    <div class="txt-nao-tenho-cadastro">
+                        <p>Não tem uma conta?</p> 
+                        <input type="submit" value="Cadastrar" class="btn-cadastrar-login" onclick="typebottom(1)">
                     </div>
-                    <div class="row">
-                        <div id="message"></div>
-                    </div>
-                    <div id="submit">
-                        <input type="submit" value="Confirmar" class="btn-confirmar" onclick="loginItensValidation()">
-                    </div>
-                    <div class="esqueci-senha">
-                        <p>Esqueceu sua senha? <a class="link-esqueci-senha" href="#">Clique aqui para recuperar</a></p>
-                    </div>
-                </fieldset> 
+                </fieldset>
             </form>
-            <fieldset class="nao-tenho-cadastro">
-                <div class="txt-nao-tenho-cadastro">
-                    <p>Não tem uma conta?</p> 
-                    <input type="submit" value="Cadastrar" class="btn-cadastrar-login">
-                </div>
-            </fieldset>
             </div>
         </section>
     </body>
