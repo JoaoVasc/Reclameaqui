@@ -44,8 +44,12 @@
     margin-right: auto;
     margin: 35px auto;
 }
-#perfis div:hover{
-    background-color: #153c63;
+.area-ouvidor:hover{
+    background-color:#8f428a;
+    box-shadow: 0 0 2em #303030;
+}
+.area-cidadao:hover{
+    background-color:#5cad22;
     box-shadow: 0 0 2em #303030;
 }
 #cidadao, #ouvidor{
@@ -61,6 +65,9 @@ h4{
     color: #2b2b2b;
     margin-bottom: 5px;
 }
-b{
-    color: #153c63;
+#destaqcidadao{
+    color: #5cad22;
+}
+#destaqouvidor{
+    color: #8f428a;
 }
