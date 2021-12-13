@@ -1,4 +1,4 @@
-.area-de-login, .nao-tenho-cadastro{
+.area-de-login{
     border: 0;
     margin-top: 2%;
     background-color: rgba(237, 237, 237, 0.7);
@@ -108,7 +108,7 @@ input:focus{
     padding-right: auto;
     color: #363636;
     font-weight: normal;
-    margin-bottom: 15%;
+    margin-bottom: 8%;
     text-align: center;
 }
 .btn-cadastrar-login{
@@ -131,4 +131,18 @@ input:focus{
     color: #fff;
     background: #2c87af;
     border: #2c87af;
+}
+.nao-tenho-cadastro{
+    border: 0;
+    margin-top: 2%;
+    background-color: rgba(237, 237, 237, 0.7);
+    padding: 0px;
+    margin: 10px auto;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: block;
+    align-items: center;
+    justify-content: left;
+    padding-left: auto ;
+    padding-right: auto;
 }

@@ -9,7 +9,7 @@
     justify-content: center;
     padding-left: auto ;
     padding-right: auto;
-    height: 450px;
+    height: 480px;
     width: 550px;
     text-align: center;
     color: #282828;
@@ -57,6 +57,11 @@
     font-weight: bold;
     font-size: 27px;;
     color: #ffffff;
+}
+h2{
+    margin: 2%;
+    font-size: 25px;
+    color: #2b2b2b;
 }
 h4{
     font-size: 15px;
