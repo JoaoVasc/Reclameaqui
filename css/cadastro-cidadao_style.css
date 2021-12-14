@@ -120,10 +120,10 @@ legend{
     display: flex;
     margin-right: auto;
 }
-#senha1,#senha2,#email1,#email2{
+#senha1,#email1,#email2{
     text-align: center;
     align-content: center;
-    width: 173%;
+    width: 153%;
     height: 35px;;
     margin-bottom: 7px;
     border: 2px solid #DCDCDC;
@@ -136,7 +136,7 @@ legend{
 #senha2{
     text-align: center;
     align-content: center;
-    width: 173%;
+    width: 153%;
     height: 35px;;
     margin-bottom: 75px;
     border: 2px solid #DCDCDC;
@@ -150,10 +150,14 @@ input:focus{
     box-shadow: 0 0 0.3em grey;
     outline: 0;
 }
-input[type="text"],[type=date],[type="tel"],[type="password"],[type="email"]{
+input[type="text"],[type=date],[type="tel"]{
     font-size:15px;
     color: #545454;
     text-transform: uppercase;
+}
+[type="email"]{
+    font-size:15px;
+    color: #545454;
 }
 #seguir{
     text-align: center;
