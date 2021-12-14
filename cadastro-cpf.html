@@ -30,28 +30,31 @@
                     <form onsubmit="return goToPag(this)";>
                         <fieldset>
                             <legend><b>Criar Conta</b></legend>
-                            <br />
                             <label for="cpf" class="cpf-form-label">Informe Seu CPF</label>
                             <input class="inputuser" type="text" name="cpf" id="cpf" maxlength="14" autocomplete="off"
                             onclick="clearImput()" onkeypress="cpfMask(this.value)" required>
+                            <div class="row">
+                                <div id="message"></div>
+                            </div>
+                            <div id="registration-botton">
+                                <button class="btnRegister btn_green" onclick="contentValidation()">Cadastrar</button>
+                            </div>
+                            <div id="legalTermsText">
+                                <p>Ao criar uma conta, você concorda com as <a href="#">Condições de Uso</a>. Verifique a
+                                    <a href="#">Notificação de Privacidade</a> e os <a href="#">Termos de Uso</a>.</p>
+                            </div>
                         </fieldset>
-                        <div class="row">
-                            <div id="message"></div>
-                        </div>
-                        <div id="registration-botton">
-                            <button class="btnRegister btn_green" onclick="contentValidation()">Cadastrar</button>
-                        </div>
-                        <div id="legalTermsText">
-                            <p>Ao criar uma conta, você concorda com as <a href="#">Condições de Uso</a>. Verifique a
-                                <a href="#">Notificação de Privacidade</a> e os <a href="#">Termos de Uso</a>.</p>
-                        </div>
-                    <hr>
-                        <div id="iHaveAccont">
-                            <p>Você já tem uma conta? <a class="fazer-login" href="entrar.html">Fazer login</a></p>
-                        </div>
                     </form>
                 </div>
             </div>
+            <form action="entrar.html">
+                <fieldset class="tenho-cadastro">
+                    <div class="txt-tenho-cadastro">
+                        <p>Já tem uma conta?</p> 
+                        <input type="submit" value="Login" class="btn-login-cadastrar">
+                    </div>
+                </fieldset>
+            </form>
         </section>
     </body>
 </html>

@@ -10,33 +10,26 @@ function loginItensValidation(form){
     let passw = document.getElementById('senha').value
     let message = document.getElementById('message');
     let msg = ""
-
-    if (localStorage.getItem('typebottom') == 0){
-        if (login === loginDefault && passw === passwDefault){
-            document.getElementById('message').style.display = 'none'
-            form.action = "historico.html";
-        }else{
-            switch(login){
-                case loginDefault:
-                    msg = 'SENHA incorreta!'
-                    break;
-                default:
-                    msg = 'Dados de LOGIN não cadastrado ou inválidos!'
-                    break;
-            }
-            message.innerHTML = msg;
-            message.className = 'message';
-            document.getElementById('senha').value = ""
-            event.preventDefault();
-        };
+   
+    if (login === loginDefault && passw === passwDefault){
+        document.getElementById('message').style.display = 'none'
+        form.action = "historico.html";
     }else{
-        form.action = "cadastro-perfil.html";
-    }
+        switch(login){
+            case loginDefault:
+                msg = 'SENHA incorreta!'
+                break;
+            default:
+                msg = 'Dados de LOGIN não cadastrado ou inválidos!'
+                break;
+        }
+        message.innerHTML = msg;
+        message.className = 'message';
+        document.getElementById('senha').value = ""
+        event.preventDefault();
+    };
 };
 
 function clearMsg(){
     document.getElementById('message').style.display = 'none';
-};
-function typebottom(param){
-    localStorage.setItem('typebottom', param)
 };

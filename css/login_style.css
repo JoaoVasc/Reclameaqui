@@ -1,8 +1,9 @@
-.area-de-login{
+#area-login-principal{
     border: 0;
+    margin-top: 2%;
     background-color: rgba(237, 237, 237, 0.7);
     padding: 0px;
-    margin: 10px auto;
+    margin: 20px auto;
     margin-left: 40%;
     margin-right: 40%;
     display: block;
@@ -10,38 +11,47 @@
     justify-content: left;
     padding-left: auto ;
     padding-right: auto;
-    height: auto;
+    height: 370px;
     width: auto;
 }
-.login-form-label{
+fieldset{
+    border: none;
+}
+legend{
+    color: #363636;
+    text-align: left;
+    border: none;
+    padding-top: 10%;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 7%;
+    margin-right: auto;
+}
+label{
     color: #4F4F4F;
     font-weight: bold;
     font-size: 15px;
     margin-left: 7%;
     margin-right: auto;
 }
-legend{
-    color: #363636;
-    text-align: left;
-    border: none;
-    padding-top: 25%;
-    padding-bottom: 12px;
-    font-weight: bold;
-    font-size: 25px;
-    margin-left: 7%;
-    margin-right: auto;
-}
-.inputuser{
+#email, #senha{
     text-align: center;
     width: 85%;
     height: 35px;;
     margin-bottom: 10px;
+    margin-top: 1%;
     border: 2px solid #A9A9A9;
     background: #DCDCDC;
     font-weight: bold;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+input[type="text"]
+{
+    font-size:20px;
+    color: #363636;
 }
 input:focus{
     box-shadow: 0 0 0.3em grey;
@@ -60,13 +70,26 @@ input:focus{
     cursor: pointer;
     color: #ffffff;
     font-size: 15px;
-    margin-left: auto;
+    margin-left: 7%;
     margin-right: auto;
+    align-items: center;
 }
 .btn-confirmar:hover{
     color: #fff;
     background: #00871b;
     border: #00871b;
+}
+.esqueci-senha{
+    margin-top: 25px;
+    font-size:12px;
+    text-decoration:none;
+    padding-left: 7.9%;
+    padding-right: 50px;
+
+}
+a:link 
+{ 
+ text-decoration:none; 
 }
 .message{
     padding-top: 5px;
@@ -77,63 +100,13 @@ input:focus{
     margin-top: 5px;
     margin-left: 7%;
     margin-right: 7%;
-    font-size:12px;
+    font-size:5px;
     font-weight: bold;
     color: #fff;
     background: #cd0000;
     border: none;
 }
-.esqueci-senha{
-    margin-top: 10%;
-    font-size:12px;
-    padding-left: auto;
-    padding-right: auto;
-    color: #363636;
-    font-weight: bold;
-    margin-bottom: 10%;
-    margin-left: 7%;
-    margin-right: 15%;
-}
-.link-esqueci-senha{
-    text-decoration:none;
-    font-size:12px;
-    font-weight: bold;
-    color: #2c87af;
-}
-.txt-nao-tenho-cadastro{
-    margin-top: 5%;
-    font-size:15px;
-    padding-left: auto;
-    padding-right: auto;
-    color: #363636;
-    font-weight: normal;
-    margin-bottom: 8%;
-    text-align: center;
-}
-.btn-cadastrar-login{
-    text-align: center;
-    width: 86%;
-    height: 38px;
-    margin-top: 5%;
-    margin-bottom: 5px;
-    border: 2px solid #153c63;
-    background: #153c63;
-    font-weight: bold;
-    display: block;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.btn-cadastrar-login:hover{
-    color: #fff;
-    background: #2c87af;
-    border: #2c87af;
-}
 .nao-tenho-cadastro{
-    border: 0;
-    margin-top: 2%;
     background-color: rgba(237, 237, 237, 0.7);
     padding: 0px;
     margin: 10px auto;
@@ -144,4 +117,39 @@ input:focus{
     justify-content: left;
     padding-left: auto ;
     padding-right: auto;
+    height: 100px;
+    width: auto;
+}
+.txt-nao-tenho-cadastro{
+    margin-top: 5%;
+    font-size:15px;
+    padding-left: auto;
+    padding-right: auto;
+    color: #363636;
+    font-weight: normal;
+    margin-bottom: 8%;
+    text-align: center;
+    display: block;
+}
+.btn-login-cadastrar{
+    text-align: center;
+    width: 86%;
+    height: 38px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    border: 2px solid #153c63;
+    background: #153c63;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 7.9%;
+    margin-right: auto;
+    align-items: center;
+}
+.btn-login-cadastrar:hover{
+    color: #fff;
+    background: #2c87af;
+    border: #2c87af;
 }
