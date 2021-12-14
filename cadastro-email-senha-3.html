@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/base_style.css">
         <link rel="stylesheet" href="css/cadastro-cidadao_style.css">
+        <script src="js/registration.js"></script>
         <title>Cadastro</title>
     </head>
-    <body>
+    <body onload="typeRegistratio()">
         <header>
             <div class="logosSES">
                 <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a>
@@ -25,40 +26,39 @@
         </div>
         <!--Fim do cabecalho-->
         <section class="container">
-            <div class="cadastro-cidadao">
+            <div class="cadastro-email-senha">
                 <form action="historico.html">
-                    <legend>Cadastro do Cidadão</legend>
-                        <img src="img/step-3.png" alt="imagem-brasao-gov-pe" width="180px">
-                     
+                    <legend id="registrationLegend"></legend>
+                    <img src="img/step-3.png" alt="imagem-brasao-gov-pe" width="180px">                     
                     <div id="cadastro">
-                        <table class="tabela-cadastro">
+                        <table class="tabela-cadastro-email-senha">
                             <tr>
                                 <td>
-                                    <label for="email1" class="email1-form-label">Email</label>
+                                    <label for="email1" class="email1-form-label required">Email</label>
                                     <input type="email" class="inputuser" name="email" id="email1">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="email2" class="email2-form-label">Confirmação de Email</label>
+                                    <label for="email2" class="email2-form-label required">Confirmação de Email</label>
                                     <input type="email" class="inputuser" name="c-email" id="email2" autocomplete="off">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="senha1" class="senha1-form-label">Senha</label>
+                                    <label for="senha1" class="senha1-form-label required">Senha</label>
                                     <input type="password" class="inputuser" name="senha" id="senha1">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="senha2" class="senha2-form-label">Confirmação de Senha</label>
+                                    <label for="senha2" class="senha2-form-label required">Confirmação de Senha</label>
                                     <input type="password" class="inputuser" name="c-senha" id="senha2">
                                 </td>
                             </tr>
                         </table>
                         <div>
-                            <input id="voltar" type="submit" value="voltar"><input id="seguir" type="submit" value="Seguir">
+                            <input id="voltar" type="submit" value="Voltar"><input id="seguir" type="submit" value="Seguir">
                         </div>                
                     </div>
                 </form>

@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="css/base_style.css">
         <link rel="stylesheet" href="css/cadastro-cidadao_style.css">
         <script src="js/handlingCPF.js"></script>
+        <script src="js/registration.js"></script>
         <title>Cadastro</title>
     </head>
-    <body onload="writeCpf()">
+    <body onload="writeCpf(), typeRegistratio()">
         <header>
             <div class="logosSES">
                 <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a>
@@ -28,11 +29,11 @@
         <section class="container">
             <div class="cadastro-cidadao">
                 <form action="cadastro-cidadao-2.html">
-                    <legend>Cadastro do Cidadão</legend>
+                    <legend id="registrationLegend"></legend>
                         <img src="img/step-1.png" alt="imagem-brasao-gov-pe" width="180px">
                      
                     <div id="cadastro">
-                        <table class="tabela-cadastro">
+                        <table class="tabela-cadastro-dados-pessoais-cidadao">
                             <tr>
                                 <td>
                                     <label for="cpf" class="cpf-form-label">CPF</label>
@@ -41,31 +42,31 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="nome" class="nome-form-label">Nome completo</label>
+                                    <label for="nome" class="nome-form-label required">Nome Completo</label>
                                     <input class="inputuser" type="text" name="nome" id="nome" required>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="nascimento" class="nascimento-form-label">Data de Nascimento</label>
+                                    <label for="nascimento" class="nascimento-form-label required">Data de Nascimento</label>
                                     <input class="inputuser" type="date" name="nascimento" id="nascimento" required>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
+                                    <label for="telefone-movel" class="telefoneM-form-label required">Celular</label>
+                                    <input class="inputuser" type="tel" name="telefone-movel" id="movel">
+                                </td>
+                            </tr>  
+                            <tr>
+                                <td>
                                     <label for="telefone-fixo" class="telefoneF-form-label">Telefone Fixo</label>
                                     <input class="inputuser" type="tel" name="telefone-fixo" id="fixo">
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="telefone-movel" class="nascimento-form-label">Celular</label>
-                                    <input class="inputuser" type="tel" name="telefone-movel" id="movel">
-                                </td>
-                            </tr>                                
+                            </tr>                              
                         </table>
                         <div>
-                            <input id="voltar" type="submit" value="voltar"><input id="seguir" type="submit" value="Seguir">
+                            <input id="voltar" type="submit" value="Voltar"><input id="seguir" type="submit" value="Seguir">
                         </div>                
                     </div>
                 </form>

@@ -8,9 +8,10 @@
         <link rel="stylesheet" href="css/cadastro-cidadao_style.css">
         <script src="js/searchCEP.js" type='module' defer></script>
         <script src="js/searchCEP.js" ></script>
+        <script src="js/registration.js"></script>
         <title>Cadastro</title>
     </head>
-    <body onload="writeCpf()">
+    <body onload="typeRegistratio()">
         <header>
             <div class="logosSES">
                 <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a>
@@ -28,19 +29,18 @@
         <!--Fim do cabecalho-->
         <section class="container">
             <div class="cadastro-cidadao">
-                <form action="cadastro-cidadao-3.html">
-                    <legend>Cadastro do Cidadão</legend>
-                        <img src="img/step-2.png" alt="imagem-brasao-gov-pe" width="180px">
-                     
+                <form action="cadastro-email-senha-3.html">
+                    <legend id="registrationLegend"></legend>
+                    <img src="img/step-2.png" alt="imagem-brasao-gov-pe" width="180px">                     
                     <div id="cadastro">
-                        <table class="tabela-cadastro">
+                        <table class="tabela-cadastro-contato-cidadao">
                             <tr>
                                 <td>
-                                    <label for="CEP" class="cep-form-label">CEP</label>
+                                    <label for="CEP" class="cep-form-label required">CEP</label>
                                     <input class="inputuser" type="text" name="CEP" id="CEP" maxlength="10" onkeypress="cepMask()">
                                 </td>
                                 <td>
-                                    <label for="estado" class="estado-form-label">Estado</label>
+                                    <label for="estado" class="estado-form-label">UF</label>
                                     <input type="text" class="inputuser" name="estado" id="estado">
                                 </td>
                             </tr>
@@ -52,11 +52,11 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="numero" class="numero-end-form-label">Número</label>
+                                    <label for="numero" class="numero-end-form-label required">Número</label>
                                     <input class="inputuser" type="text" name="numero" id="numero" required>
                                 </td>
                                 <td>
-                                    <label for="complemento" class="complemento-end-form-label">Complemento</label>
+                                    <label for="complemento" class="complemento-end-form-label required">Complemento</label>
                                     <input class="inputuser" type="text" name="complemento" id="complemento" required>
                                 </td>
                             </tr>
@@ -74,7 +74,7 @@
                             </tr>
                         </table>
                         <div>
-                            <input id="voltar" type="submit" value="voltar"><input id="seguir" type="submit" value="Seguir">
+                            <input id="voltar" type="submit" value="Voltar"><input id="seguir" type="submit" value="Seguir">
                         </div>                
                     </div>
                 </form>

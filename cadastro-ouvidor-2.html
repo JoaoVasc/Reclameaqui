@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base_style.css">
+        <link rel="stylesheet" href="css/cadastro-cidadao_style.css">
+        <script src="js/registration.js"></script>
+        <title>Cadastro</title>
+    </head>
+    <body onload="typeRegistratio()">
+        <header>
+            <div class="logosSES">
+                <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a>
+                <img src="img/brasao-gov-pe.png" alt="imagem-brasao-gov-pe">                
+            </div>
+        </header>
+        <div class="home-menu">
+            <table class="menu-principal">
+                <tr>
+                    <th class="item-de-tabela-3 separador">|</th>
+                    <th class="item-de-tabela-entrar btn-menu"><a class="itens-menu" id="entrar" href="./entrar.html">Entrar</a></th>
+                </tr>
+            </table>
+        </div>
+        <!--Fim do cabecalho-->
+        <section class="container">
+            <div class="cadastro-ouvidor">
+                <form action="cadastro-email-senha-3.html">
+                    <legend id="registrationLegend"></legend>
+                    <img src="img/step-2.png" alt="step-2" width="180px">                     
+                    <div id="cadastro">
+                        <table class="tabela-cadastro-contato-ouvidor">
+                            <tr>
+                                <tr>
+                                    <td>
+                                        <label for="telefone-movel" class="telefoneM-form-label required">Celular</label>
+                                        <input class="inputuser" type="tel" name="telefone-movel" id="movel">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="telefone-fixo" class="telefoneF-form-label required">Telefone Fixo</label>
+                                        <input class="inputuser" type="tel" name="telefone-fixo" id="fixo">
+                                    </td>
+                                </tr>    
+                            </tr>                               
+                        </table>
+                        <div>
+                            <input id="voltar" type="submit" value="Voltar"><input id="seguir" type="submit" value="Seguir">
+                        </div>                
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
