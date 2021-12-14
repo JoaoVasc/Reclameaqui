@@ -150,7 +150,7 @@ input:focus{
     box-shadow: 0 0 0.3em grey;
     outline: 0;
 }
-input[type="text"],[type=date],[type="tel"]{
+input[type="text"],[type=date],[type="tel"],[type="password"],[type="email"]{
     font-size:15px;
     color: #545454;
     text-transform: uppercase;
