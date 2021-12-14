@@ -1,7 +1,7 @@
 #registration-CPF{
     border: 0;
     margin-top: 2%;
-    background-color: rgba(237, 237, 237, 0.7);
+    background-color: rgb(255, 255, 255);
     padding: 0px;
     margin: 20px auto;
     margin-left: 40%;
@@ -13,6 +13,7 @@
     padding-right: auto;
     height: 310px;
     width: auto;
+    box-shadow: 0 0 0.2em grey;
 }
 fieldset{
     border: none;
@@ -21,7 +22,7 @@ legend{
     color: #363636;
     text-align: left;
     border: none;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 25px;
@@ -111,7 +112,8 @@ a:link
     border: none;
 }
 .txt-tenho-cadastro{
-    margin-top: 5%;
+    margin-top: 2%;
+    padding-bottom: 11%;
     font-size:15px;
     padding-left: auto;
     padding-right: auto;
@@ -119,11 +121,10 @@ a:link
     font-weight: normal;
     margin-bottom: 8%;
     text-align: center;
-    display: block;
 }
 .btn-login-cadastrar{
     text-align: center;
-    width: 86%;
+    width: 92%;
     height: 38px;
     margin-top: 5%;
     margin-bottom: 10px;
@@ -134,7 +135,7 @@ a:link
     cursor: pointer;
     color: #ffffff;
     font-size: 15px;
-    margin-left: 7.9%;
+    margin-left: auto;
     margin-right: auto;
     align-items: center;
 }
@@ -144,8 +145,8 @@ a:link
     border: #2c87af;
 }
 .tenho-cadastro{
-    background-color: rgba(237, 237, 237, 0.7);
-    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
     margin: 10px auto;
     margin-left: 40%;
     margin-right: 40%;
@@ -156,4 +157,5 @@ a:link
     padding-right: auto;
     height: 100px;
     width: auto;
+    box-shadow: 0 0 0.2em grey;
 }
