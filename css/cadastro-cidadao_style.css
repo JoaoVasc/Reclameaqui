@@ -1,0 +1,195 @@
+.cadastro-cidadao{
+    background-color: rgba(237, 237, 237, 0.7);
+    padding: 15px;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.2% ;
+    padding-right: 2.2%;
+    height: 460px;
+    width: 320px;
+    text-align: center;
+    color: #282828;
+}
+label{
+    color: #4F4F4F;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: block;
+}
+.estado-form-label, .complemento-end-form-label{
+    color: #4F4F4F;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 30%;
+    margin-right: auto;
+    text-align: left;
+    display: block;
+}
+legend{
+    color: #363636;
+    text-align: center;
+    border: none;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cpf{
+    text-align: center;
+    align-content: center;
+    width: 153%;
+    height: 35px;;
+    margin-bottom: 7px;
+    border: 2px solid #DCDCDC;
+    background: #DCDCDC;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#nome, #nascimento, #fixo, #movel{
+    text-align: center;
+    align-content: center;
+    width: 153%;
+    height: 35px;;
+    margin-bottom: 7px;
+    border: 2px solid #DCDCDC;
+    background: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cidade, #lougradouro, #bairro{
+    text-align: center;
+    align-content: center;
+    width: 207%;
+    height: 35px;;
+    margin-bottom: 7px;
+    border: 2px solid #DCDCDC;
+    background: #DCDCDC;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#numero, #CEP{
+    text-align: center;
+    align-content: center;
+    width: 124%;
+    height: 35px;;
+    margin-bottom: 7px;
+    border: 2px solid #DCDCDC;
+    background: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#complemento{
+    text-align: center;
+    align-content: center;
+    width: 67%;
+    height: 35px;;
+    margin-bottom: 7px;
+    border: 2px solid #DCDCDC;
+    background: #ffffff;
+    font-weight: bold;
+    margin-left: 30%;
+    display: flex;
+    margin-right: auto;
+}
+#estado{
+    text-align: center;
+    align-content: center;
+    width: 67%;
+    height: 35px;;
+    margin-bottom: 7px;
+    border: 2px solid #DCDCDC;
+    background: #DCDCDC;
+    font-weight: bold;
+    margin-left: 30%;
+    display: flex;
+    margin-right: auto;
+}
+#senha1,#senha2,#email1,#email2{
+    text-align: center;
+    align-content: center;
+    width: 173%;
+    height: 35px;;
+    margin-bottom: 7px;
+    border: 2px solid #DCDCDC;
+    background: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#senha2{
+    text-align: center;
+    align-content: center;
+    width: 173%;
+    height: 35px;;
+    margin-bottom: 75px;
+    border: 2px solid #DCDCDC;
+    background: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+input:focus{
+    box-shadow: 0 0 0.3em grey;
+    outline: 0;
+}
+input[type="text"],[type=date],[type="tel"]{
+    font-size:15px;
+    color: #545454;
+    text-transform: uppercase;
+}
+#seguir{
+    text-align: center;
+    width: 30%;
+    height: 30px;
+    border: 2px solid #093a13;
+    background: #093a13;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: auto;
+}
+#seguir:hover{
+    color: #fff;
+    background: #00871b;
+    border: #00871b;
+}
+
+#voltar{
+    text-align: center;
+    width: 30%;
+    height: 30px;
+    border: 2px solid #153c63;
+    background: #153c63;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: 7%;
+}
+#voltar:hover{
+    color: #fff;
+    background: #389cc7;
+    border: #389cc7;
+}

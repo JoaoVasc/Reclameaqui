@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base_style.css">
+        <link rel="stylesheet" href="css/cadastro-cidadao_style.css">
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <header>
+            <div class="logosSES">
+                <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a>
+                <img src="img/brasao-gov-pe.png" alt="imagem-brasao-gov-pe">                
+            </div>
+        </header>
+        <div class="home-menu">
+            <table class="menu-principal">
+                <tr>
+                    <th class="item-de-tabela-3 separador">|</th>
+                    <th class="item-de-tabela-entrar btn-menu"><a class="itens-menu" id="entrar" href="./entrar.html">Entrar</a></th>
+                </tr>
+            </table>
+        </div>
+        <!--Fim do cabecalho-->
+        <section class="container">
+            <div class="cadastro-cidadao">
+                <form action="historico.html">
+                    <legend>Cadastro do Cidadão</legend>
+                        <img src="img/step-3.png" alt="imagem-brasao-gov-pe" width="180px">
+                     
+                    <div id="cadastro">
+                        <table class="tabela-cadastro">
+                            <tr>
+                                <td>
+                                    <label for="email1" class="email1-form-label">Email</label>
+                                    <input type="email" class="inputuser" name="email" id="email1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email2" class="email2-form-label">Confirmação de Email</label>
+                                    <input type="email" class="inputuser" name="c-email" id="email2" autocomplete="off">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="senha1" class="senha1-form-label">Senha</label>
+                                    <input type="password" class="inputuser" name="senha" id="senha1">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="senha2" class="senha2-form-label">Confirmação de Senha</label>
+                                    <input type="password" class="inputuser" name="c-senha" id="senha2">
+                                </td>
+                            </tr>
+                        </table>
+                        <div>
+                            <input id="voltar" type="submit" value="voltar"><input id="seguir" type="submit" value="Seguir">
+                        </div>                
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

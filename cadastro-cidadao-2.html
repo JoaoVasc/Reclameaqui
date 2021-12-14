@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base_style.css">
+        <link rel="stylesheet" href="css/cadastro-cidadao_style.css">
+        <script src="js/searchCEP.js" type='module' defer></script>
+        <script src="js/searchCEP.js" ></script>
+        <title>Cadastro</title>
+    </head>
+    <body onload="writeCpf()">
+        <header>
+            <div class="logosSES">
+                <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a>
+                <img src="img/brasao-gov-pe.png" alt="imagem-brasao-gov-pe">                
+            </div>
+        </header>
+        <div class="home-menu">
+            <table class="menu-principal">
+                <tr>
+                    <th class="item-de-tabela-3 separador">|</th>
+                    <th class="item-de-tabela-entrar btn-menu"><a class="itens-menu" id="entrar" href="./entrar.html">Entrar</a></th>
+                </tr>
+            </table>
+        </div>
+        <!--Fim do cabecalho-->
+        <section class="container">
+            <div class="cadastro-cidadao">
+                <form action="cadastro-cidadao-3.html">
+                    <legend>Cadastro do Cidadão</legend>
+                        <img src="img/step-2.png" alt="imagem-brasao-gov-pe" width="180px">
+                     
+                    <div id="cadastro">
+                        <table class="tabela-cadastro">
+                            <tr>
+                                <td>
+                                    <label for="CEP" class="cep-form-label">CEP</label>
+                                    <input class="inputuser" type="text" name="CEP" id="CEP" maxlength="10" onkeypress="cepMask()">
+                                </td>
+                                <td>
+                                    <label for="estado" class="estado-form-label">Estado</label>
+                                    <input type="text" class="inputuser" name="estado" id="estado">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="lougradouro" class="lougradouro-form-label">Endereço</label>
+                                    <input class="inputuser" type="text" name="lougradouro" id="lougradouro" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="numero" class="numero-end-form-label">Número</label>
+                                    <input class="inputuser" type="text" name="numero" id="numero" required>
+                                </td>
+                                <td>
+                                    <label for="complemento" class="complemento-end-form-label">Complemento</label>
+                                    <input class="inputuser" type="text" name="complemento" id="complemento" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="bairro" class="bairro-form-label">Bairro</label>
+                                    <input class="inputuser" type="text" name="bairro" id="bairro" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="cidade" class="cidade-form-label">Cidade</label>
+                                    <input type="text" class="inputuser" name="cidade" id="cidade">
+                                </td>
+                            </tr>
+                        </table>
+                        <div>
+                            <input id="voltar" type="submit" value="voltar"><input id="seguir" type="submit" value="Seguir">
+                        </div>                
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

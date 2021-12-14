@@ -83,12 +83,12 @@ function goToPag(form){
     let userTypeValue = localStorage.getItem('value');
 
     if (userTypeValue == 0){
-        userTypeValue = "Cidadao";
+        userTypeValue = "cidadao";
     } else {
-        userTypeValue = "Ouvidor";
+        userTypeValue = "ouvidor";
     };
 
-    form.action = "cadastro"+userTypeValue+".html";
+    form.action = "cadastro-"+userTypeValue+"-1.html";
 };
 
 function writeCpf(){
