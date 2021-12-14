@@ -1,6 +1,5 @@
 .area-de-login{
     border: 0;
-    margin-top: 2%;
     background-color: rgba(237, 237, 237, 0.7);
     padding: 0px;
     margin: 10px auto;
@@ -26,7 +25,7 @@ legend{
     text-align: left;
     border: none;
     padding-top: 25%;
-    padding-bottom: 5px;
+    padding-bottom: 12px;
     font-weight: bold;
     font-size: 25px;
     margin-left: 7%;
