@@ -1,6 +1,6 @@
 "use strict";
 
-function typeRegistratio(){
+function typeRegistration(){
 
     let userTypeValue = localStorage.getItem('value');
 
@@ -10,6 +10,6 @@ function typeRegistratio(){
         userTypeValue = "Ouvidor";
     };
 
-    var message = document.getElementById('registrationLegend');
-    message.innerHTML = "Cadastro do "+userTypeValue;
+    var legendElement = document.getElementById('registrationLegend');
+    legendElement.innerHTML = "Cadastro do "+userTypeValue;
 }
