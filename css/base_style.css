@@ -27,7 +27,7 @@ header{
     flex-wrap: wrap;
     background: #153c63;
     width: auto;
-    height: 40px;
+    height: 30px;
 }
 .menu-principal{
     width: auto;
@@ -40,23 +40,25 @@ header{
 }
 .item-de-tabela-entrar{
     width:150px;
-    height: 30px;
+    height: 5px;
     font-weight: normal;
     text-align: center;
     transition: 0.1s all;
     cursor: pointer;
     background: #153c63;
     border: none;
+    font-size: 15px;
 }
 .item-de-tabela-cadastrar{
     width:150px;
-    height: 30px;
+    height: 5px;
     font-weight: normal;
     text-align: center;
     transition: 0.1s all;
     cursor: pointer;
     background: #153c63;
     border: none;
+    font-size: 15px;
 }
 .item-de-tabela-3{
     height: auto;
