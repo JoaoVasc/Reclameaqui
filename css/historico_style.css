@@ -1,0 +1,174 @@
+.historico-container{
+    position:relative;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+.principal {
+    display: grid;
+    padding: 2%;
+    padding-inline: 10%;
+    margin:0 auto
+}    
+.area-foto-perfil { 
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    width: 270px;
+    height: 270px;
+    box-shadow: 0 0 0.3em #797979;
+    padding-top: 3%;
+}
+.perfil-nome{
+    margin-top: 10px;
+    font-size: 20px;
+    padding-inline: 10%;
+    color: #282828;
+    display: inline-block;
+}
+.tipo-perfil{
+    margin-top: 5px;
+    font-size: 12px;
+    padding-inline: 10%;
+    color: #ffffff;
+    display: inline-block;
+    background: rgba(92,162,46,1) 0%;
+    width: 200px;
+}
+.imagem-perfil{
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    background: #063970;
+    text-align: center;
+    width: 170px;
+    height: 170px;
+}
+.area-menu-principal-perfil { 
+    grid-area: 2 / 1 / 3 / 2;
+    width: 270px;
+    height: 155px;
+    box-shadow: 0 0 0.3em #797979;
+    margin-top: 4%;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    border: 0.01px solid #e6e6e6;
+    margin-bottom: 1%;    
+}
+.menu-lateral{
+    line-height: 30px;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 2%;
+    font-size: 13px;
+    font-weight: bold;
+    color: #282828;
+    padding-left: 7%;
+}
+.menu-lateral:hover{
+    background: linear-gradient(90deg, rgba(6,57,112,1) 0%, rgba(6,57,112,1) 35%, rgba(26,108,143,1) 100%);
+    color: #ffffff;
+    padding-left: 10%;
+    width: 243px;
+}
+.menu-desconectar:hover{
+    background: linear-gradient(80deg, rgba(182,79,0,1) 0%, rgba(182,79,0,1) 35%, rgba(193,116,0,1) 100%);    
+    color: #ffffff;
+    padding-left: 10%;
+}
+.area-tabela-historico { 
+    grid-area: 1 / 2 / 6 / 6;
+    padding: 1%;
+    box-shadow: 0 0 0.3em #797979;
+    text-align: left;
+    height: 520px;
+    margin-inline: 1%;
+    align-self: left;
+}
+.titulo-tabela-historico{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #282828;
+    text-align: left;
+    margin-bottom: 2%;
+}
+.cabecalho-reclamcao{
+    padding-inline: 2%;
+    width: 10%;
+    height: 25px;
+    background-color: #17a2b8;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    width: 166px;
+}
+.area-tabela-reclamacao{
+    margin-top: 1%;
+    overflow:scroll;
+    overflow-x:hidden;
+    width: 100%;
+    height: 70%;
+}
+.linha-reclamacao-1{
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 2%;
+}
+.corpo-impar-reclamcao{
+    padding-inline: 2%;
+    width: 10%;
+    height: 25px;
+    background-color: #f7f7f7;
+    color: #282828;
+    font-size: 12px;
+    text-align: center;
+    width: 166px;
+}
+.corpo-par-reclamcao{
+    padding-inline: 2%;
+    width: 10%;
+    height: 25px;
+    background-color: #e4e4e4;
+    color: #282828;
+    font-size: 12px;
+    text-align: center;
+    width: 166px;
+}
+.corpo-status{
+    font-weight: bold;
+}
+.concluido{
+    background-color: #9ea7ad;
+}
+.aberto{
+    background-color: #fce83a;
+}
+.atendido{
+    background-color: #2dccff;
+}
+.pendente{
+    background-color: #ffb302;
+}
+.reaberto{
+    background-color: #ff3838;
+}
+.em-adamento{
+    background-color: #56f000;
+}
+.corpo-severidade{
+    font-weight: bold;
+}
+.alta{
+    color: #eb2020;
+}
+.baixa{
+    color: #525252;
+}
+.media{
+    color: #000000
+}

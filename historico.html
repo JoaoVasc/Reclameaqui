@@ -5,96 +5,116 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reclame Aqui</title>
-        <link rel="stylesheet" href="./css/historico.css">
+        <link rel="stylesheet" href="./css/base_style.css">
+        <link rel="stylesheet" href="./css/historico_style.css">
     </head>
     <body>
         <header>
-            <div id="logo"><a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a></div>
-            <div id="pernambuco">
-                <img src="https://cdn.pe.gov.br/default/governo/default/assets/img/marca_brasao_transp_azul_hor_184x48.png" width="240" alt="imagem-brasao-gov-pe">
+            <div class="logosSES">
+                <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses" width="180px"></a>
+                <img src="img/brasao-gov-pe.png" alt="imagem-brasao-gov-pe" width="180px">                
             </div>
-            <div id="btn">
-                <div><a id="entrar" href="./entrar.html">Entrar</a></div>
-                <div><a id="cadastrar" href="cadastro.html">Cadastrar</a></div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Acompanhe sua reclamação</a></li>
-                    <li><a href="#">Cadastre uma empresa</a></li>
-                </ul>
-            </nav>
         </header>
+        <div class="home-menu">
+            <table class="menu-principal">
+                <tr>
+                    <th class="item-de-tabela-3 separador">|</th>
+                    <th class="item-de-tabela-desconectar btn-menu"><a class="itens-menu" id="desconectar" href="cadastro-perfil.html">Desconectar</a></th>
+                </tr>
+            </table>
+        </div>
         <!--Fim do cabecalho-->
-        <section id="principal">
-            <section id="R1">
-                <aside>
-                    <div><a href="#" class="btnl">Meu Perfil</a></div>
-                    <div><a href="#" class="btnl">Histórico de Reclamações</a></div>
-                    <div><a href="reclameaqui.html" class="btnl">Nova Reclamação</a></div>
-                    <div><a href="#" class="btnl">Desconectar</a></div>
-                </aside>
-                <div id="reclamacoes">
-                    <h2>Histórico de Reclamação</h2>
-                    <table id="historico">
-                        <tr class="cc">
-                            <th>Status</th>
-                            <th>Identificador</th>
-                            <th>Severidade</th>
-                            <th>Data de Abertura</th>
-                            <th>Data de Conclusão</th>
-                            <th>Tempo de Duração</th>
-                            <th></th>
-                        </tr>
-                        <tr class="ce">
-                            <td>Em Andamento</td>
-                            <td>A1 A00 A0000 A</td>
-                            <td>Baixa</td>
-                            <td>15/10/2021 19:30</td>
-                            <td> - </td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr class="cc">
-                            <th>Secretaria</th>
-                            <th>Unidade</th>
-                            <th>Região de<br/>Saúde</th>
-                            <th>Microrregião de<br/>Saúde</th>
-                            <th>Município</th>
-                            <th>Tipo de Serviço</th>
-                            <th>Terceirizada envolvida</th>
-                        </tr>
-                        <tr class="ce">
-                            <td>SES-PE</td>
-                            <td>UPAE limoeiro</td>
-                            <td>II</td>
-                            <td>IV</td>
-                            <td>Limoeiro</td>
-                            <td>Infraestrutura</td>
-                            <td>Empresa Sapiente</td>
-                        </tr>
-                        <tr class="cc">
-                            <th>Reclamante</th>
-                            <th>CPF</th>
-                            <th>E-mail</th>
-                            <th>Telefones</th>
-                            <th>Mais Info.</th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                        <tr class="ce">
-                            <td>Esther de Carvalho</td>
-                            <td>111.011.101-11</td>
-                            <td>esther.carvalho.feitosa@email.com</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td></td>
-                            <td></td>
+        <container class="historico-container">
+            <section class="principal">
+                <div class="area-foto-perfil">
+                    <img class="imagem-perfil" src="img/user-profile.png" alt="imagem-perfil-de-usuario" width="450">
+                    <h2 class="perfil-nome">Esther Carvalho Feitosa</h2>
+                    <h2 Class="tipo-perfil">Perfil Cidadão</h2>
+                </div>
+                <div class="area-menu-principal-perfil">
+                    <a href="#"><div class="menu-lateral meu-perfil">Meu Perfil</div></a>
+                    <hr>
+                    <a href="#"><div class="menu-lateral historico-de-reclamacao">Histórico de Reclamações</div></a>
+                    <hr>
+                    <a href="reclameaqui.html"><div class="menu-lateral nova-reclamacao">Nova Reclamação</div></a>
+                    <hr>
+                    <a href="#"><div class="menu-lateral menu-desconectar">Desconectar</div></a>
+                </div>
+                <div class="area-tabela-historico">
+                    <caption><h2 class="titulo-tabela-historico">Olá, Esther.<br>Esse é seu histórico de reclamações:</h2></caption>
+                    <table class="cabecalho-historico">
+                        <tr class="linha-cabecalho">
+                            <th class="cabecalho-reclamcao cabecalho-status">Status</th>
+                            <th class="cabecalho-reclamcao cabecalho-id">Identificador</th>
+                            <th class="cabecalho-reclamcao cabecalho-severidade">Severidade</th>
+                            <th class="cabecalho-reclamcao cabecalho-abertura">Data Abertura</th>
+                            <th class="cabecalho-reclamcao cabecalho-dias-abertura">Dias Aberto</th>
+                            <th class="cabecalho-reclamcao cabecalho-conclasao">Data Conclusão</th>
+                            <th class="cabecalho-reclamcao cabecalho-duracao">Duração Total</th>
                         </tr>
                     </table>
-                </div>
+                    <div class="area-tabela-reclamacao">
+                        <table class="dados-reclamcao-1">
+                            <tr class="linha-reclamacao-1">
+                                <td class="corpo-impar-reclamcao corpo-status em-adamento">Em Andamento</td>
+                                <td class="corpo-impar-reclamcao corpo-id">OEF 2968 SU58 P8</td>
+                                <td class="corpo-impar-reclamcao corpo-severidade baixa">Baixa</td>
+                                <td class="corpo-impar-reclamcao corpo-abertura">15/10/2021 19:30</td>
+                                <td class="corpo-impar-reclamcao corpo-dias-abertura">61 Dias</td>
+                                <td class="corpo-impar-reclamcao corpo-conclasao"> - </td>
+                                <td class="corpo-impar-reclamcao corpo-duracao"> - </td>
+                            </tr>
+                            <tr class="linha-reclamacao-1">
+                                <td class="corpo-par-reclamcao corpo-status concluido">Concluído</td>
+                                <td class="corpo-par-reclamcao corpo-id">DYC 9560 HS02 B0</td>
+                                <td class="corpo-par-reclamcao corpo-severidade alta">Alta</td>
+                                <td class="corpo-par-reclamcao corpo-abertura">10/09/2021 12:23</td>
+                                <td class="corpo-par-reclamcao corpo-dias-abertura"> - </td>
+                                <td class="corpo-par-reclamcao corpo-conclasao">13/09/2021 17:08</td>
+                                <td class="corpo-par-reclamcao corpo-duracao"> 3 Dias </td>
+                            </tr>
+                            <tr class="linha-reclamacao-1">
+                                <td class="corpo-impar-reclamcao corpo-status reaberto">Reaberto</td>
+                                <td class="corpo-impar-reclamcao corpo-id">OFJ 0453 WI31 L2</td>
+                                <td class="corpo-impar-reclamcao corpo-severidade media">Média</td>
+                                <td class="corpo-impar-reclamcao corpo-abertura">11/10/2021 14:02</td>
+                                <td class="corpo-impar-reclamcao corpo-dias-abertura">65 Dias</td>
+                                <td class="corpo-impar-reclamcao corpo-conclasao"> - </td>
+                                <td class="corpo-impar-reclamcao corpo-duracao"> - </td>
+                            </tr>
+                            <tr class="linha-reclamacao-1">
+                                <td class="corpo-par-reclamcao corpo-status atendido">Atendido</td>
+                                <td class="corpo-par-reclamcao corpo-id">APG 0413 UF34 A6</td>
+                                <td class="corpo-par-reclamcao corpo-severidade alta">Alta</td>
+                                <td class="corpo-par-reclamcao corpo-abertura">10/12/2021 08:39</td>
+                                <td class="corpo-par-reclamcao corpo-dias-abertura"> 05 Dias </td>
+                                <td class="corpo-par-reclamcao corpo-conclasao"> - </td>
+                                <td class="corpo-par-reclamcao corpo-duracao"> - </td>
+                            </tr>
+                            <tr class="linha-reclamacao-1">
+                                <td class="corpo-impar-reclamcao corpo-status pendente">Pendente</td>
+                                <td class="corpo-impar-reclamcao corpo-id">FNV 8727 GD64 R2</td>
+                                <td class="corpo-impar-reclamcao corpo-severidade baixa">Baixa</td>
+                                <td class="corpo-impar-reclamcao corpo-abertura">01/11/2021 12:54</td>
+                                <td class="corpo-impar-reclamcao corpo-dias-abertura">44 Dias</td>
+                                <td class="corpo-impar-reclamcao corpo-conclasao"> - </td>
+                                <td class="corpo-impar-reclamcao corpo-duracao"> - </td>
+                            </tr>
+                            <tr class="linha-reclamacao-1">
+                                <td class="corpo-par-reclamcao corpo-status aberto">Aberto</td>
+                                <td class="corpo-par-reclamcao corpo-id">WFP 2887 KV62 H1</td>
+                                <td class="corpo-par-reclamcao corpo-severidade media">Média</td>
+                                <td class="corpo-par-reclamcao corpo-abertura">16/12/2021 13:27</td>
+                                <td class="corpo-par-reclamcao corpo-dias-abertura"> 1 Dias </td>
+                                <td class="corpo-par-reclamcao corpo-conclasao"> - </td>
+                                <td class="corpo-par-reclamcao corpo-duracao"> - </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>     
+                <!-- /#reclamacoes -->
             </section>
-            <!-- /#reclamacoes -->
-        </section>
+        </container>
         <!-- /#principal -->
     </body>
 </html>

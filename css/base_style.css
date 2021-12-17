@@ -49,7 +49,7 @@ header{
     border: none;
     font-size: 15px;
 }
-.item-de-tabela-cadastrar{
+.item-de-tabela-cadastrar, .item-de-tabela-desconectar{
     width:150px;
     height: 5px;
     font-weight: normal;
