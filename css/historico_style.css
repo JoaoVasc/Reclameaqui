@@ -95,7 +95,7 @@ hr{
     text-align: left;
     margin-bottom: 2%;
 }
-.cabecalho-reclamcao{
+.cabecalho-reclamacao{
     padding-inline: 2%;
     width: 10%;
     height: 25px;
@@ -114,7 +114,7 @@ hr{
     width: 100%;
     height: 70%;
 }
-.corpo-impar-reclamcao{
+.corpo-impar-reclamacao{
     padding-inline: 2%;
     width: 10%;
     height: 25px;
@@ -124,7 +124,7 @@ hr{
     text-align: center;
     width: 166px;
 }
-.corpo-par-reclamcao{
+.corpo-par-reclamacao{
     padding-inline: 2%;
     width: 10%;
     height: 25px;
@@ -204,7 +204,7 @@ hr{
 .media{
     color: #000000
 }
-table.dados-reclamcao tr:hover td {
+table.dados-reclamacao tr:hover td {
     background-color: #84c2cb;
     cursor: pointer;
 }

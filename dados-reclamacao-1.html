@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reclame Aqui</title>
+        <link rel="stylesheet" href="./css/base_style.css">
+        <link rel="stylesheet" href="./css/historico_style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logosSES">
+                <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses" width="180px"></a>
+                <img src="img/brasao-gov-pe.png" alt="imagem-brasao-gov-pe" width="180px">                
+            </div>
+        </header>
+        <div class="home-menu">
+            <table class="menu-principal">
+                <tr>
+                    <th class="item-de-tabela-3 separador">|</th>
+                    <th class="item-de-tabela-desconectar btn-menu"><a class="itens-menu" id="desconectar" href="cadastro-perfil.html">Desconectar</a></th>
+                </tr>
+            </table>
+        </div>
+        <!--Fim do cabecalho-->
+        <container class="historico-container">
+            <section class="principal">
+                <div class="area-foto-perfil">
+                    <img class="imagem-perfil" src="img/user-profile.png" alt="imagem-perfil-de-usuario" width="450">
+                    <h2 class="perfil-nome">Esther Carvalho Feitosa</h2>
+                    <h2 Class="tipo-perfil">Perfil Cidadão</h2>
+                </div>
+                <div class="area-menu-principal-perfil">
+                    <a href="#"><div class="menu-lateral meu-perfil">Meu Perfil</div></a>
+                    <hr>
+                    <a href="#"><div class="menu-lateral historico-de-reclamacao">Histórico de Reclamações</div></a>
+                    <hr>
+                    <a href="reclameaqui.html"><div class="menu-lateral nova-reclamacao">Nova Reclamação</div></a>
+                    <hr>
+                    <a href="#"><div class="menu-lateral menu-desconectar">Desconectar</div></a>
+                </div>
+                <div class="area-tabela-historico">
+                    <caption><h2 class="titulo-tabela-historico">Olá, Esther!<br>Esse é seu histórico de reclamações:</h2></caption>
+                    <table class="cabecalho-historico">
+                        <tr class="linha-cabecalho">
+                            <th class="cabecalho-reclamacao cabecalho-status">Status</th>
+                            <th class="cabecalho-reclamacao cabecalho-id">Identificador</th>
+                            <th class="cabecalho-reclamacao cabecalho-severidade">Severidade</th>
+                            <th class="cabecalho-reclamacao cabecalho-abertura">Data Abertura</th>
+                            <th class="cabecalho-reclamacao cabecalho-dias-abertura">Dias Aberto</th>
+                            <th class="cabecalho-reclamacao cabecalho-conclasao">Data Conclusão</th>
+                            <th class="cabecalho-reclamacao cabecalho-duracao">Duração Total</th>
+                        </tr>
+                        <tr class="linha-reclamacao-1" onclick="window.location='historico.html';">
+                            <td class="corpo-impar-reclamacao corpo-status"><span class="em-adamento">&#9737 </span>Em Andamento</td>
+                            <td class="corpo-impar-reclamacao corpo-id">OEF 2968 SU58 P8</td>
+                            <td class="corpo-impar-reclamacao corpo-severidade baixa">Baixa</td>
+                            <td class="corpo-impar-reclamacao corpo-abertura">15/10/2021 19:30</td>
+                            <td class="corpo-impar-reclamacao corpo-dias-abertura">61 Dias</td>
+                            <td class="corpo-impar-reclamacao corpo-conclasao"> - </td>
+                            <td class="corpo-impar-reclamacao corpo-duracao"> - </td>
+                        </tr>
+                        <tr class="linha-cabecalho cabecalho-2">
+                            <th class="cabecalho-reclamacao cabecalho-secretaria">Secretaria</th>
+                            <th class="cabecalho-reclamacao cabecalho-unidade">Unidade</th>
+                            <th class="cabecalho-reclamacao cabecalho-região">Região</th>
+                            <th class="cabecalho-reclamacao cabecalho-microrregião">Microrregião</th>
+                            <th class="cabecalho-reclamacao cabecalho-municipio">Município</th>
+                            <th class="cabecalho-reclamacao cabecalho-serviço">Tipo de Serviço</th>
+                            <th class="cabecalho-reclamacao cabecalho-empresa">Empresa Envolvida</th>
+                        </tr>
+                        <tr class="linha-reclamacao-2">
+                            <td class="corpo-impar-reclamacao corpo-secretaria">SES - PE</td>
+                            <td class="corpo-impar-reclamacao corpo-unidade">UPAE - LIMOEIRO</td>
+                            <td class="corpo-impar-reclamacao corpo-região">II</td>
+                            <td class="corpo-impar-reclamacao corpo-microrregião">IV</td>
+                            <td class="corpo-impar-reclamacao corpo-dias-abertura">LIMOEIRO - PE</td>
+                            <td class="corpo-impar-reclamacao corpo-serviço">INFRAESTRUTURA</td>
+                            <td class="corpo-impar-reclamacao corpo-empresa"> - </td>
+                        </tr>
+                        <tr class="linha-cabecalho cabecalho-3">
+                            <th colspan="2" class="cabecalho-reclamacao cabecalho-reclamante">Nome do Reclamante</th>
+                            <th class="cabecalho-reclamacao cabecalho-cpf">CPF</th>
+                            <th class="cabecalho-reclamacao cabecalho-idade">Idade</th>
+                            <th colspan="2" class="cabecalho-reclamacao cabecalho-Email">Email</th>
+                            <th class="cabecalho-reclamacao cabecalho-movel">Nº. de Contato</th>
+                        </tr>
+                        <tr class="linha-reclamacao-3">
+                            <td colspan="2" class="corpo-impar-reclamacao corpo-reclamante">Esther Carvalho Feitosa</th>
+                            <td class="corpo-impar-reclamacao corpo-cpf">042.829.960-13</th>
+                            <td class="corpo-impar-reclamacao corpo-idade">49 Anos</th>
+                            <td colspan="2" class="corpo-impar-reclamacao corpo-Email">esther.carvalho.feitosa@email.com.br</th>
+                            <td class="corpo-impar-reclamacao corpo-movel">(81) 9 9999-9999</th>
+                        </tr>
+                    </table>
+                </div>     
+                <!-- /#reclamacoes -->
+            </section>
+        </container>
+        <!-- /#principal -->
+    </body>
+</html>
