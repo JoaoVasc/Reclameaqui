@@ -172,7 +172,3 @@ hr{
 .media{
     color: #000000
 }
-tr:hover{
-    cursor: pointer;
-    box-shadow: 0 0 1em #797979;
-  }
