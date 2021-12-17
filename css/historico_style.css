@@ -114,11 +114,6 @@ hr{
     width: 100%;
     height: 70%;
 }
-.linha-reclamacao-1{
-    margin-top: 10px;
-    text-align: left;
-    margin-bottom: 2%;
-}
 .corpo-impar-reclamcao{
     padding-inline: 2%;
     width: 10%;
@@ -141,24 +136,61 @@ hr{
 }
 .corpo-status{
     font-weight: bold;
+    text-align: left;
 }
 .concluido{
+    text-align: right;
+    color: #9ea7ad;
     background-color: #9ea7ad;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    margin-right: 5%;    
 }
 .aberto{
+    text-align: right;
+    color: #fce83a;
     background-color: #fce83a;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    margin-right: 5%;    
 }
 .atendido{
+    text-align: right;
+    color: #2dccff;
     background-color: #2dccff;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    margin-right: 5%;    
 }
 .pendente{
+    text-align: right;
+    color: #ffb302;
     background-color: #ffb302;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    margin-right: 5%;    
 }
 .reaberto{
-    background-color: #ff3838;
+    text-align: right;
+    color: #ff0000;
+    background-color: #ff0000;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    margin-right: 5%;    
 }
 .em-adamento{
+    text-align: right;
+    color: #56f000;
     background-color: #56f000;
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    margin-right: 5%;    
 }
 .corpo-severidade{
     font-weight: bold;
@@ -171,4 +203,8 @@ hr{
 }
 .media{
     color: #000000
+}
+table.dados-reclamcao tr:hover td {
+    background-color: #84c2cb;
+    cursor: pointer;
 }
