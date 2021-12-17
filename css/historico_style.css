@@ -84,7 +84,7 @@ hr{
     padding: 1%;
     box-shadow: 0 0 0.3em #797979;
     text-align: left;
-    height: 520px;
+    height: 490px;
     margin-inline: 1%;
     align-self: left;
 }
@@ -172,3 +172,7 @@ hr{
 .media{
     color: #000000
 }
+tr:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1em #797979;
+  }
