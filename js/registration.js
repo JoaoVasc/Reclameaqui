@@ -3,7 +3,7 @@
 function typeRegistration(){
     let userTypeValue = localStorage.getItem('value');
     if (userTypeValue == 0){
-        userTypeValue = "Cidadao";
+        userTypeValue = "Cidadão";
     } else {
         userTypeValue = "Ouvidor";
     };
