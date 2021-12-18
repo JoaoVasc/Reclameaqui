@@ -7,6 +7,7 @@
         <title>Reclame Aqui</title>
         <link rel="stylesheet" href="./css/base_style.css">
         <link rel="stylesheet" href="./css/historico_style.css">
+        <link rel="stylesheet" href="./css/reclamacao_style.css">
     </head>
     <body>
         <header>
@@ -34,7 +35,7 @@
                 <div class="area-menu-principal-perfil">
                     <a href="#"><div class="menu-lateral meu-perfil">Meu Perfil</div></a>
                     <hr>
-                    <a href="#"><div class="menu-lateral historico-de-reclamacao">Histórico de Reclamações</div></a>
+                    <a href="historico.html"><div class="menu-lateral historico-de-reclamacao">Histórico de Reclamações</div></a>
                     <hr>
                     <a href="reclameaqui.html"><div class="menu-lateral nova-reclamacao">Nova Reclamação</div></a>
                     <hr>
@@ -54,7 +55,7 @@
                         </tr>
                         <tr class="linha-reclamacao-1" onclick="window.location='historico.html';">
                             <td class="corpo-impar-reclamacao corpo-status"><span class="em-adamento">&#9737 </span>Em Andamento</td>
-                            <td class="corpo-impar-reclamacao corpo-id">OEF 2968 SU58 P8</td>
+                            <td class="corpo-impar-reclamacao corpo-id">IIU 3884 IA30 A8</td>
                             <td class="corpo-impar-reclamacao corpo-severidade baixa">Baixa</td>
                             <td class="corpo-impar-reclamacao corpo-abertura">15/10/2021 19:30</td>
                             <td class="corpo-impar-reclamacao corpo-dias-abertura">61 Dias</td>
@@ -92,6 +93,33 @@
                             <td class="corpo-impar-reclamacao corpo-idade">49 Anos</th>
                             <td colspan="2" class="corpo-impar-reclamacao corpo-Email">esther.carvalho.feitosa@email.com.br</th>
                             <td class="corpo-impar-reclamacao corpo-movel">(81) 9 9999-9999</th>
+                        </tr>
+                    </table>
+                    <table class="tabela-descricao-reclamacao">
+                        <tr>
+                            <td colspan="2">
+                                <label class="chat-reclamacao" for="titulo">Título</label>
+                                <input class="chat-titulo-reclamacao" id="titulo" type="text" value="Excepteur sint occaecat cupidatat non proident." readonly="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label class="chat-reclamacao" for="descricao">Descrição</label>
+                                <textarea class="chat-descricao-reclamacao" id="texto" rows="4">
+Ester Carvalho Feitosa - 15/10/2021 19:30
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+    doloremque laudantium.
+
+André Freitas Moreira - Ouvidoria SES - PE 16/10/2021 09:12
+    Reclamação em verificação.
+</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="chat-reclamacao" for="arquivos">Anexar Arquivos</label>
+                                <input class="chat-datalhe-arquivos" id="arquivo" type="file">
+                            </td>
                         </tr>
                     </table>
                 </div>     

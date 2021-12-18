@@ -219,3 +219,28 @@ table.tabela-descricao{
     padding-left: 10px;
     padding-right: 10px;
 }
+label.chat-reclamacao{
+    font-size: 13px;
+}
+table.tabela-descricao-reclamacao{
+    margin:auto;
+}
+input.chat-titulo-reclamacao{
+    width: 600px;
+    height: 20px;
+    margin-left:0px;
+    padding-inline: 2px;
+}
+textarea.chat-descricao-reclamacao{
+    width: 600px;
+    height: 100px;
+    padding: 1px ;
+    margin-left: auto;
+    text-align: left;
+}
+input.chat-datalhe-arquivos{
+    display: block;
+    border: none;
+    margin-left:0px;
+    padding-inline: 0px;
+}
