@@ -4,50 +4,67 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
         <title>Reclame Aqui</title>
+        <link rel="stylesheet" href="./css/base_style.css">
+        <link rel="stylesheet" href="./css/historico_style.css">
+        <link rel="stylesheet" href="./css/reclamacao_style.css">
     </head>
     <body>
         <header>
-            <div id="logo"><a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a></div>
-            <div id="pernambuco">
-                <img src="https://cdn.pe.gov.br/default/governo/default/assets/img/marca_brasao_transp_azul_hor_184x48.png" width="240" alt="imagem-brasao-gov-pe">
+            <div class="logosSES">
+                <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses" width="180px"></a>
+                <img src="img/brasao-gov-pe.png" alt="imagem-brasao-gov-pe" width="180px">                
             </div>
-            <div id="btn">
-                <div><a id="entrar" href="./entrar.html">Entrar</a></div>
-                <div><a id="cadastrar" href="cadastro.html">Cadastrar</a></div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Acompanhe sua reclamação</a></li>
-                    <li><a href="#">Cadastre uma empresa</a></li>
-                </ul>
-            </nav>
         </header>
-        <!--fim do cabecalho-->
-        <section id="principal">
-            <section id="R1">
-                <aside>
-                    <div><a href="#" class="btnl">Meu Perfil</a></div>
-                    <div><a href="historico.html" class="btnl">Histórico de Reclamações</a></div>
-                    <div><a href="#" class="btnl">Nova Reclamação</a></div>
-                    <div><a href="#" class="btnl">Desconectar</a></div>
-                </aside>
-                <div id="reclamacoes">
-                    <h2>Sua reclamação está relacionada à quais das áreas de serviço abaixo</h2>
-                    <select name="secretaria" id="secretaria">
+        <div class="home-menu">
+            <table class="menu-principal">
+                <tr>
+                    <th class="item-de-tabela-3 separador">|</th>
+                    <th class="item-de-tabela-desconectar btn-menu"><a class="itens-menu" id="desconectar" href="cadastro-perfil.html">Desconectar</a></th>
+                </tr>
+            </table>
+        </div>
+        <!--Fim do cabecalho-->
+        <container class="historico-container">
+            <section class="principal">
+                <div class="area-foto-perfil">
+                    <img class="imagem-perfil" src="img/user-profile.png" alt="imagem-perfil-de-usuario" width="450">
+                    <h2 class="perfil-nome">Esther Carvalho Feitosa</h2>
+                    <h2 Class="tipo-perfil">Perfil Cidadão</h2>
+                </div>
+                <div class="area-menu-principal-perfil">
+                    <a href="#"><div class="menu-lateral meu-perfil">Meu Perfil</div></a>
+                    <hr>
+                    <a href="#"><div class="menu-lateral historico-de-reclamacao">Histórico de Reclamações</div></a>
+                    <hr>
+                    <a href="reclameaqui.html"><div class="menu-lateral nova-reclamacao">Nova Reclamação</div></a>
+                    <hr>
+                    <a href="#"><div class="menu-lateral menu-desconectar">Desconectar</div></a>
+                </div>
+                <div class="layout-itens-reclamacao">
+                    <h2 class="alerta-nova-reclamacao">Sua reclamação está relacionada à quais das áreas de serviço abaixo</h2>
+                    <img src="img/4-step-2.png" alt="step-2" width="280px">
+                    <select name="secretaria" id="secretaria" class="inputuser">
                         <option value="secretaria">Emissão de documentos</option>
                         <option value="secretaria">Entrega de medicamentos ou receitas</option>
                         <option value="secretaria">Infraestrutura</option>
                         <option value="secretaria">Canais virtuais</option>
                         <option value="secretaria">Servidores / Médicos / Enfermeiros</option>
                     </select>
-                    <div><a href="reclamacao3.html" id="seguir">Seguir</a></div>
-                    <h5 id="pg">PÁGINA 2/4</h5>
-                </div>
+                    <table class="tabela-botoes">
+                        <tr>
+                            <td class="botao-reclamacao">
+                                <a href="reclamacao.html" id="voltar">Voltar</a>                                    
+                            </td>
+                            <td class="botao-reclamacao">
+                                <a href="reclamacao3.html" id="seguir">Seguir</a>
+                            </td>
+                        </tr>
+                    </table>   
+                </div>    
+                <!-- /#reclamacoes -->
             </section>
-            <!-- /#reclamacoes -->
-        </section>
+        </container>
         <!-- /#principal -->
     </body>
 </html>

@@ -5,46 +5,58 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reclame Aqui</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/base_style.css">
+        <link rel="stylesheet" href="./css/historico_style.css">
+        <link rel="stylesheet" href="./css/reclamacao_style.css">
     </head>
     <body>
         <header>
-            <div id="logo"><a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses"></a></div>
-            <div id="pernambuco">
-                <img src="https://cdn.pe.gov.br/default/governo/default/assets/img/marca_brasao_transp_azul_hor_184x48.png" width="240" alt="imagem-brasao-gov-pe">
+            <div class="logosSES">
+                <a href="index.html"><img src="img/SES.png" alt="imagem-logo-ses" width="180px"></a>
+                <img src="img/brasao-gov-pe.png" alt="imagem-brasao-gov-pe" width="180px">                
             </div>
-            <div id="btn">
-                <div><a id="entrar" href="./entrar.html">Entrar</a></div>
-                <div><a id="cadastrar" href="cadastro.html">Cadastrar</a></div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Acompanhe sua reclamação</a></li>
-                    <li><a href="#">Cadastre uma empresa</a></li>
-                </ul>
-            </nav>
         </header>
+        <div class="home-menu">
+            <table class="menu-principal">
+                <tr>
+                    <th class="item-de-tabela-3 separador">|</th>
+                    <th class="item-de-tabela-desconectar btn-menu"><a class="itens-menu" id="desconectar" href="cadastro-perfil.html">Desconectar</a></th>
+                </tr>
+            </table>
+        </div>
         <!--Fim do cabecalho-->
-        <section id="principal">
-            <section id="R1">
-                <aside>
-                    <div><a href="#" class="btnl">Meu Perfil</a></div>
-                    <div><a href="historico.html" class="btnl">Histórico de Reclamações</a></div>
-                    <div><a href="#" class="btnl">Nova Reclamação</a></div>
-                    <div><a href="#" class="btnl">Desconectar</a></div>
-                </aside>
-                <div id="reclamacoes">
-                    <h2>Você está abrindo uma nova reclamação</h2>
-                    <h4>Antes de prosseguir, precisamos confirmar se você deseja que seus
-                    <br/>dados pessoais sejam enviados para a ouvidoria melhor te atender:</h4>
-                    <div id="opcoes">
-                        <a href="reclamacao.html" class="btnRg">Sim! Eu desejo que meus dados pessoais sejam enviados.</a>
-                        <a href="reclamacao.html" class="btnRr">Não! Eu quero abrir uma reclamação anônima.</a>
-                    </div>    
+        <container class="historico-container">
+            <section class="principal">
+                <div class="area-foto-perfil">
+                    <img class="imagem-perfil" src="img/user-profile.png" alt="imagem-perfil-de-usuario" width="450">
+                    <h2 class="perfil-nome">Esther Carvalho Feitosa</h2>
+                    <h2 Class="tipo-perfil">Perfil Cidadão</h2>
                 </div>
+                <div class="area-menu-principal-perfil">
+                    <a href="#"><div class="menu-lateral meu-perfil">Meu Perfil</div></a>
+                    <hr>
+                    <a href="#"><div class="menu-lateral historico-de-reclamacao">Histórico de Reclamações</div></a>
+                    <hr>
+                    <a href="reclameaqui.html"><div class="menu-lateral nova-reclamacao">Nova Reclamação</div></a>
+                    <hr>
+                    <a href="#"><div class="menu-lateral menu-desconectar">Desconectar</div></a>
+                </div>
+                <div class="layout-itens-reclamacao">
+                    <div class="alerta-nova-reclamacao">
+                        <h2>Você está abrindo uma nova reclamação</h2>
+                    </div>      
+                    <div class="info-nova-reclamacao">              
+                        <h4>Antes de prosseguir, precisamos confirmar se você deseja que seus
+                        <br/>dados pessoais sejam enviados para a ouvidoria melhor te atender:</h4>
+                        </div>
+                    <div id="opcoes-1">
+                        <a href="reclamacao.html" class="nao-anonimo-botao">Sim! Eu desejo que meus dados pessoais sejam enviados.</a>
+                        <a href="reclamacao.html" class="anonimo-botao">Não! Eu quero abrir uma reclamação anônima.</a>
+                    </div>
+                </div>    
+                <!-- /#reclamacoes -->
             </section>
-            <!-- /#reclamacoes -->
-        </section>
+        </container>
         <!-- /#principal -->
     </body>
 </html>

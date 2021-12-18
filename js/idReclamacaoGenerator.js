@@ -2,13 +2,13 @@
 
 function idGenerator(){
     var i = 0;
-    var alfaCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    var alfaCharacters = 'AEIOU'
     var numCharacters = '0123456789'
-    var reclNumID = alfaCharacters.charAt(Math.floor(Math.random() * 26));
+    var reclNumID = alfaCharacters.charAt(Math.floor(Math.random() * 5));
     for (i=0; i<12; i++){
 
         if ( reclNumID.length < 3 || reclNumID.length >= 9 && reclNumID.length <= 10 || reclNumID.length === 14){
-            reclNumID += alfaCharacters.charAt(Math.floor(Math.random() * 26))
+            reclNumID += alfaCharacters.charAt(Math.floor(Math.random() * 5))
         } else {
             reclNumID += numCharacters.charAt(Math.floor(Math.random() * 10))
         }
