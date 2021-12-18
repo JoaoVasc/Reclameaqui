@@ -42,7 +42,8 @@
                     <a href="#"><div class="menu-lateral menu-desconectar">Desconectar</div></a>
                 </div>
                 <div class="area-tabela-historico">
-                    <caption><h2 class="titulo-tabela-historico">Olá, Esther!<br>Esse é seu histórico de reclamações:</h2></caption>
+                    <caption>
+                        <h2 class="titulo-tabela-historico">Olá, Esther!<br>Esse é seu histórico de reclamações:</h2></caption>
                     <table class="cabecalho-historico">
                         <tr class="linha-cabecalho">
                             <th class="cabecalho-reclamacao cabecalho-status">Status</th>
@@ -114,11 +115,16 @@ André Freitas Moreira - Ouvidoria SES - PE 16/10/2021 09:12
     Reclamação em verificação.
 </textarea>
                             </td>
+                            <td class="anexar-arquivos-dados-reclamcao">
+                                <label for="file-upload" class="custom-file-upload">
+                                    <img class="upload" src="img/252006.png" alt="clips-de-papel" width="50">
+                                </label>
+                                <input id="file-upload" type="file"/>
+                            </td>
                         </tr>
                         <tr>
-                            <td>
-                                <label class="chat-reclamacao" for="arquivos">Anexar Arquivos</label>
-                                <input class="chat-datalhe-arquivos" id="arquivo" type="file">
+                            <td class="botao-reclamacao">
+                                <a href="reclamacao2.html" id="salvar">Salvar</a>
                             </td>
                         </tr>
                     </table>

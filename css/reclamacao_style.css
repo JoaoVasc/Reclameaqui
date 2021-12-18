@@ -124,7 +124,7 @@ legend{
     display: block;
     padding-top: 9px;
 }
-#seguir:hover,#concluir:hover{
+#seguir:hover,#concluir:hover, #salvar:hover{
     background: #00871b;
     border: 2px solid #00871b;
     color: #ffffff;
@@ -243,4 +243,50 @@ input.chat-datalhe-arquivos{
     border: none;
     margin-left:0px;
     padding-inline: 0px;
+}
+td.anexar-arquivos-dados-reclamcao{
+    width: 150px;
+    height: 20px;    
+    display: block;
+    margin-left:0px;
+    padding-inline: 0px;
+    margin: auto;
+}
+input.chat-datalhe-arquivos{
+    width: 320px;
+    height: 25px;    
+    display: block;
+    margin-left:0px;
+    padding-inline: 0px;
+    font-size: 1;
+    margin: auto;
+}
+#salvar{
+    text-align: center;
+    width: 80px;
+    height: 20px;
+    border: 2px solid #093a13;
+    background: #093a13;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 12px;
+    margin: auto;
+    align-items: center;
+    display: block;
+    padding-top: 5px;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+}
+input[type="file"] {
+    display: none;
+}
+.anexar-arquivos-dados-reclamcao{
+    padding-top: 35px;
 }
